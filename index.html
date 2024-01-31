@@ -66,38 +66,33 @@
 
 </head>
 <body>
-<canvas id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
+<canvas id="myCanvas" width="800" height="800" style="border: 1px solid #d3d3d3;">
 Your browser does not support the HTML canvas tag.</canvas>
-
-	<img src="./高樓的風.jpg" id="lamp" width="32" height="32">
+<img src="./高樓的風.jpg" id="lamp" width="320" height="320">
 <script>
+	const colors = ["purple", "powderblue", "teal", "khaki", "red", "blue", "green", "gray", "orange", "rgb(255,165,0)", "rgb(100,100,100)", "black"];
+	const ctx = document.getElementById("myCanvas").getContext("2d");
+//var ctx = myCanvas.getContext("2d");
+	ctx.font = "30px Arial";
+	ctx.fillText("Hello World", 10, 50);
 
-	var colors=["purple", "powderblue", "teal", "khaki", "red", "blue", "green", "gray", "orange", 
-            "rgb(255,165,0)", "rgb(100,100,100)", "black"];
-
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.font = "30px Arial";
-ctx.fillText("Hello World",10,50);
-
-	for (let i = 0; i < 20; i++) {
-const img = document.getElementById("lamp");
-const pat = ctx.createPattern(img, "repeat");
+	//for (let i = 0; i < 20; i++) {
+	setInterval(() => {
+		const img = document.getElementById("lamp");
+		const pat = ctx.createPattern(img, "repeat");
 		let x = Math.floor(Math.random() * 800);
 		let y = Math.floor(Math.random() * 800);
 		let r = Math.floor(Math.random() * 256);
 		let g = Math.floor(Math.random() * 256);
 		let b = Math.floor(Math.random() * 256);
 		let col = Math.floor(Math.random() * 12);
-
-	ctx.beginPath();
-ctx.arc(x, y, 32, 0, 2 * Math.PI);
-ctx.stroke();
+		ctx.beginPath();
+		ctx.arc(x, y, 32, 0, 2 * Math.PI);
+		ctx.stroke();
 		ctx.fillStyle = pat;//colors[col];//rgb(r,g,b); //red
+		ctx.fill();
 //ctx.arc(15,15,15,0,Math.PI*2,true);
-ctx.fill();
-
-	}
+	}), 500);
 </script>
 <div><ul>	
 <li><a href="./index.html">Home</a></li>
