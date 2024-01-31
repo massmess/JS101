@@ -86,6 +86,8 @@ Your browser does not support the HTML canvas tag.</canvas>
 		let g = Math.floor(Math.random() * 256);
 		let b = Math.floor(Math.random() * 256);
 		let col = Math.floor(Math.random() * 12);
+		ctx.font = "12px serif";
+		ctx.fillText(myCount.toString(), x, y);
 		ctx.beginPath();
 		ctx.arc(x, y, 25, 0, 2 * Math.PI);
 		ctx.stroke();
