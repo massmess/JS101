@@ -77,9 +77,9 @@ Your browser does not support the HTML canvas tag.</canvas>
 	ctx.fillText("Hello World", 10, 50);
 
 	//for (let i = 0; i < 20; i++) {
-	let cnt = 0;
+	let mycount = 0;
 	const stopCond = setInterval(() => {
-		if (++cnt > 20) clearInterval(stopCond);
+		if (++myCount > 20) clearInterval(stopCond);
 		const img = document.getElementById("lamp");
 		const pat = ctx.createPattern(img, "repeat");
 		let x = Math.floor(Math.random() * 800);
