@@ -70,6 +70,9 @@
 Your browser does not support the HTML canvas tag.</canvas>
 <img src="./高樓的風.jpg" id="lamp" width="320" height="320">
 <script>
+	const zeroPad = (num, places) => String(num).padStart(places, '0')
+
+console.log(zeroPad(5, 2)); // "05"
 	const colors = ["purple", "powderblue", "teal", "khaki", "red", "blue", "green", "gray", "orange", "rgb(255,165,0)", "rgb(100,100,100)", "black"];
 	const ctx = document.getElementById("myCanvas").getContext("2d");
 	//ctx.font = "30px Arial";
@@ -93,7 +96,7 @@ Your browser does not support the HTML canvas tag.</canvas>
 		ctx.fill();
 		ctx.fillStyle = "red";
 		ctx.font = "12px serif";
-		ctx.fillText(myCount.toString(), x-5, y+4);
+		ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x-8, y+4);
 	}, 500);
 </script>
 <div><ul>	
