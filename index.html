@@ -73,6 +73,9 @@ var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.font = "30px Arial";
 ctx.fillText("Hello World",10,50);
+	ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();
 </script>
 <div><ul>	
 <li><a href="./index.html">Home</a></li>
