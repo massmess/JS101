@@ -79,7 +79,7 @@ Your browser does not support the HTML canvas tag.</canvas>
 	//for (let i = 0; i < 20; i++) {
 	let mycount = 0;
 	const stopCond = setInterval(() => {
-		if (++myCount > 20) clearInterval(stopCond);
+		if (++myCount >= 50) clearInterval(stopCond);
 		const img = document.getElementById("lamp");
 		const pat = ctx.createPattern(img, "repeat");
 		let x = Math.floor(Math.random() * 800);
@@ -89,7 +89,7 @@ Your browser does not support the HTML canvas tag.</canvas>
 		let b = Math.floor(Math.random() * 256);
 		let col = Math.floor(Math.random() * 12);
 		ctx.beginPath();
-		ctx.arc(x, y, 32, 0, 2 * Math.PI);
+		ctx.arc(x, y, 25, 0, 2 * Math.PI);
 		ctx.stroke();
 		ctx.fillStyle = pat;//colors[col];//rgb(r,g,b); //red
 		ctx.fill();
