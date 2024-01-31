@@ -84,7 +84,7 @@ console.log(zeroPad(5, 2)); // "05"
 
 	const stopCond = setInterval(() => {
 		if (++myCount >= 50) clearInterval(stopCond);
-		const img = document.getElementById("lampSmall");//"./高樓的風(small).jpg";
+		const img = document.getElementById("lamp");//"./高樓的風(small).jpg";
 		const pat = ctx.createPattern(img, "repeat");
 		let x = Math.floor(Math.random() * 800);
 		let y = Math.floor(Math.random() * 800);
