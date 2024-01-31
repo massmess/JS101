@@ -78,17 +78,17 @@ ctx.font = "30px Arial";
 ctx.fillText("Hello World",10,50);
 
 	for (let i = 0; i < 100; i++) {
-		let x = Math.random() * 800;
-		let y = Math.random() * 800;
-		let r = Math.random() * 256;
-		let g = Math.random() * 256;
-		let b = Math.random() * 256;
+		let x = Math.floor(Math.random() * 800);
+		let y = Math.floor(Math.random() * 800);
+		let r = Math.floor(Math.random() * 256);
+		let g = MMath.floor(ath.random() * 256);
+		let b = Math.floor(Math.random() * 256);
 		let col = Math.floor(Math.random() * 8);
 
 	ctx.beginPath();
 ctx.arc(x, y, 10, 0, 2 * Math.PI);
 ctx.stroke();
-		ctx.fillStyle = colors[col];//rgb(r,g,b); //red
+		ctx.fillStyle = rgb(r,g,b);//colors[col];//rgb(r,g,b); //red
 //ctx.arc(15,15,15,0,Math.PI*2,true);
 ctx.fill();
 
