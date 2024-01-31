@@ -79,7 +79,7 @@ Your browser does not support the HTML canvas tag.</canvas>
 	//for (let i = 0; i < 20; i++) {
 	let cnt = 0;
 	const stopCond = setInterval(() => {
-		if (++cnt > 100) clearInterval(stopCond);
+		if (++cnt > 20) clearInterval(stopCond);
 		const img = document.getElementById("lamp");
 		const pat = ctx.createPattern(img, "repeat");
 		let x = Math.floor(Math.random() * 800);
