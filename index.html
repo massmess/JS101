@@ -71,8 +71,6 @@ Your browser does not support the HTML canvas tag.</canvas>
 
 	<img src="./高樓的風.jpg" id="lamp" width="32" height="32">
 <script>
-	  const img = document.getElementById("lamp")
-  const pat = ctx.createPattern(img, direction);
 
 	var colors=["purple", "powderblue", "teal", "khaki", "red", "blue", "green", "gray", "orange", 
             "rgb(255,165,0)", "rgb(100,100,100)", "black"];
@@ -83,6 +81,8 @@ ctx.font = "30px Arial";
 ctx.fillText("Hello World",10,50);
 
 	for (let i = 0; i < 20; i++) {
+	  const img = document.getElementById("lamp")
+  const pat = ctx.createPattern(img, direction);
 		let x = Math.floor(Math.random() * 800);
 		let y = Math.floor(Math.random() * 800);
 		let r = Math.floor(Math.random() * 256);
