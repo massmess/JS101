@@ -81,8 +81,8 @@ ctx.font = "30px Arial";
 ctx.fillText("Hello World",10,50);
 
 	for (let i = 0; i < 20; i++) {
-	  const img = document.getElementById("lamp")
-  const pat = ctx.createPattern(img, direction);
+const img = document.getElementById("lamp");
+const pat = ctx.createPattern(img, "repeat");
 		let x = Math.floor(Math.random() * 800);
 		let y = Math.floor(Math.random() * 800);
 		let r = Math.floor(Math.random() * 256);
