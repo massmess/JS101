@@ -39,10 +39,11 @@
 			}
 
 			#neat {
+				width: max-content;
+				margin: auto;
 				font-family: monospace;
 				font-size: 1.25rem;
 				line-height: 1.25rem;
-				border: 1px solid white;
 				padding: 0.25rem;
 			}
 
@@ -95,23 +96,23 @@
 			(Please take note that there are three levels of comparison in the function.)
 
 			<p id="neat">
-				<span style="padding-left: 3rem">function isleap(year) {</span><br>
-				<span style="padding-left: 6rem">let y = true;</span><br><br>
-				<span style="padding-left: 6rem">if (year % 4 != 0) {</span><br>
-				<span style="padding-left: 9rem">y = false;<br>
+				function isleap(year) {<br>
+				<span style="padding-left: 3rem">let y = true;</span><br><br>
+				<span style="padding-left: 3rem">if (year % 4 != 0) {</span><br>
+				<span style="padding-left: 6rem">y = false;<br>
+				<span style="padding-left: 3rem">} else {</span><br>
+				<span style="padding-left: 6rem">if (year % 100 != 0) {</span><br>
+				<span style="padding-left: 9rem">;</span><br>
 				<span style="padding-left: 6rem">} else {</span><br>
-				<span style="padding-left: 9rem">if (year % 100 != 0) {</span><br>
-				<span style="padding-left: 12rem">;</span><br>
+				<span style="padding-left: 9rem">if (year % 400 != 0) {</span><br>
+				<span style="padding-left: 12rem">y = false;</span><br>
 				<span style="padding-left: 9rem">} else {</span><br>
-				<span style="padding-left: 12rem">if (year % 400 != 0) {</span><br>
-				<span style="padding-left: 15rem">y = false;</span><br>
-				<span style="padding-left: 12rem">} else {</span><br>
-				<span style="padding-left: 15rem">;</span><br>
-				<span style="padding-left: 12rem">}</span><br>
+				<span style="padding-left: 12rem">;</span><br>
 				<span style="padding-left: 9rem">}</span><br>
-				<span style="padding-left: 6rem">}</span><br><br>
-				<span style="padding-left: 6rem">return y;</span><br>
-				<span style="padding-left: 3rem">}</span>
+				<span style="padding-left: 6rem">}</span><br>
+				<span style="padding-left: 3rem">}</span><br><br>
+				<span style="padding-left: 3rem">return y;</span><br>
+				}
 			</p>
 
 			<div id="one">
