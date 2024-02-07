@@ -40,11 +40,11 @@
 
 			#neat {
 				width: max-content;
-				margin: auto;
-				font-family: monospace;
+				margin: inherit;
+				font-family: "Source Code Pro", monospace;
 				font-size: 1.25rem;
 				line-height: 1.25rem;
-				padding: 0.25rem;
+				padding: 5px;
 			}
 
 			#lbl {
@@ -58,7 +58,7 @@
 
 			#yes {
 				width: 85%;
-				font-family: sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 1.25rem;
 				color: dimgray;
 			}
@@ -76,7 +76,7 @@
 			}
 
 			#leap {
-				font-family: sans-serif;
+				font-family: "Gill Sans", sans-serif;
 				font-size: 12px;
 				color: rgb(40, 20, 40);
 				background-color: rgb(220, 240, 220);
@@ -95,7 +95,7 @@
 			Here is the JavaScript code for determining whether a given year is a leap year.<br>
 			(Please take note that there are three levels of comparison in the function.)
 
-			<p id="neat">
+			<div id="neat">
 				function isleap(year) {<br>
 				<span style="padding-left: 3rem">let y = true;</span><br><br>
 				<span style="padding-left: 3rem">if (year % 4 != 0) {</span><br>
@@ -113,7 +113,7 @@
 				<span style="padding-left: 3rem">}</span><br><br>
 				<span style="padding-left: 3rem">return y;</span><br>
 				}
-			</p>
+			</div>
 
 			<div id="one">
 				<label for="num" id="lbl"><b>Please type a year: </b><input type="text" id="num" size="7" placeholder="(number)" value="2024" accesskey="N"></label>
