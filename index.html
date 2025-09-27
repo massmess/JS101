@@ -82,9 +82,9 @@ console.log(zeroPad(5, 2)); // "05"
 	//ctx.font = "30px Arial";
 	//ctx.fillText("Hello World", 10, 50);
 	let myCount = 0;
-
+	let myCircles = []
 	const stopCond = setInterval(() => {
-		if (++myCount >= 50) clearInterval(stopCond);
+		if (myCount >= 50) clearInterval(stopCond);
 		const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
 		const pat = ctx.createPattern(img, "repeat");
 		let x = Math.floor(Math.random() * 800);
@@ -93,6 +93,13 @@ console.log(zeroPad(5, 2)); // "05"
 		let g = Math.floor(Math.random() * 256);
 		let b = Math.floor(Math.random() * 256);
 		let col = Math.floor(Math.random() * 12);
+		for (const circle of myCircles) {
+			const a = x - circle[0];
+			const b = y - circle[1];
+			if (Math.sqrt(a*a + b*b) < 50) return;
+		}
+		myCount = myCount + 1;
+			
 		ctx.beginPath();
 		ctx.arc(x, y, 25, 0, 2 * Math.PI);
 		ctx.stroke();
@@ -102,7 +109,7 @@ console.log(zeroPad(5, 2)); // "05"
 		ctx.font = "12px serif";
 			//ctx.font = "10px monospace";
 			ctx.textAlign = "center";  // horizontal alignment
-			//ctx.textBaseline = "middle";  // vertical alignment
+			ctx.textBaseline = "middle";  // vertical alignment
 			//ctx.fillText("Koch", 10, 10);
 			ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x, y);
 		//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x - 9, y + 5);
