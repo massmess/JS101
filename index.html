@@ -84,7 +84,6 @@ console.log(zeroPad(5, 2)); // "05"
 	let myCount = 0;
 	let myCircles = []
 	const stopCond = setInterval(() => {
-		if (myCircles.length == 30) clearInterval(stopCond);
 		const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
 		const pat = ctx.createPattern(img, "repeat");
 		const min = 20;
@@ -121,6 +120,9 @@ console.log(zeroPad(5, 2)); // "05"
 			//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x, y);
 			ctx.fillText(myCircles.length, x, y);
 		//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x - 9, y + 5);
+
+		if (myCircles.length == 30) clearInterval(stopCond);
+
 	}, 500);
 </script>
 <div><ul>	
