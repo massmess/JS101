@@ -2,7 +2,7 @@
 <html lang="zh-tw">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>A Blinker Demo</title>
 
 	<style>
@@ -106,7 +106,7 @@ console.log(zeroPad(5, 2)); // "05"
 		myCount = myCount + 1;
 			
 		ctx.beginPath();
-		ctx.arc(x, y, 25, 0, 2 * Math.PI);
+		ctx.arc(x, y, rho, 0, 2 * Math.PI);
 		ctx.stroke();
 		ctx.fillStyle = pat;//colors[col];//rgb(r,g,b); //red
 		ctx.fill();
