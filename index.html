@@ -99,8 +99,13 @@ console.log(zeroPad(5, 2)); // "05"
 		ctx.fillStyle = pat;//colors[col];//rgb(r,g,b); //red
 		ctx.fill();
 		ctx.fillStyle = "orange"//`rgb(${r}, ${g}, ${b})`;//"red";
-		ctx.font = "12px serif";
-		ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x - 9, y + 5);
+		//ctx.font = "12px serif";
+			cxt.font = "10px monospace";
+			cxt.textAlign = "center";  // horizontal alignment
+			cxt.textBaseline = "middle";  // vertical alignment
+			cxt.fillText("Koch", 10, 10);
+			ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x, y);
+		//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x - 9, y + 5);
 	}, 500);
 </script>
 <div><ul>	
