@@ -98,6 +98,7 @@ console.log(zeroPad(5, 2)); // "05"
 			const b = y - circle[1];
 			if (Math.sqrt(a*a + b*b) < 50) return;
 		}
+		myCircles.push(x, y);
 		myCount = myCount + 1;
 			
 		ctx.beginPath();
