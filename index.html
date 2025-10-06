@@ -132,7 +132,8 @@ XHTML 1.1
 Your browser does not support the HTML canvas tag.</canvas>
 <script>
 	const paragraph = document.getElementById("myWords");
-	paragraph.innerHTML = paragraph.innerHTML + `<br><em>Big deal: ${document.compatMode}<\em>`; console.log(document.compatMode);
+	const save = paragraph.innerHTML;
+	paragraph.innerHTML = save + `<br><em>Big deal: ${document.compatMode}<\em>`; console.log(document.compatMode);
 	const zeroPad = (num, places) => String(num).padStart(places, '0')
 
 console.log(zeroPad(5, 2)); // "05"
