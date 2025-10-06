@@ -136,7 +136,7 @@ XHTML 1.1
 <canvas id="myCanvas" width="400" height="400" style="display: inline-block; background-color: pink; border: 1px solid #d3d3d3; border-radius: 3px;">
 Your browser does not support the HTML canvas tag.</canvas>
 <script>
-	//const paragraph = document.getElementById("myWords");
+	const paragraph = document.getElementById("myWords");
 	const save = paragraph.innerHTML;
 	paragraph.innerHTML = save + "<br><br><em>Big deal: ${document.compatMode}<\em>";
 	console.log(document.compatMode);
