@@ -138,7 +138,7 @@ Your browser does not support the HTML canvas tag.</canvas>
 <script>
 	const paragraph = document.getElementById("myWords");
 	const save = paragraph.innerHTML;
-	paragraph.innerHTML = save + "<br><br><em>Big deal: ${document.compatMode}<\em>";
+	paragraph.innerHTML = save + `<br><em>Big deal: ${document.compatMode}<\em>`;
 	console.log(document.compatMode);
 	const zeroPad = (num, places) => String(num).padStart(places, '0')
 
