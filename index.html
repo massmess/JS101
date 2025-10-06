@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh-tw">
+<!DOCTYPE html><html lang="zh-hant-tw">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +82,7 @@
 </head>
 <body>
 	<img class="rounded-image" src="./高樓的風.jpg" id="lamp" width="320" height="auto">
-<p style="width: 80%; background-color: dimgray; color: white; font-Size: 16px; font-family: Cosolas">WTF! Explanation:
+<p id= "myWords" style="width: 80%; background-color: dimgray; color: white; font-Size: 16px; font-family: Cosolas">WTF! Explanation:
 column-width: Specifies the desired width of each column. The browser will adjust the number of columns based on the available space.
 column-gap: Sets the spacing between columns. A smaller value makes the layout more compact.
 column-rule: Adds a visual divider between columns (optional).
@@ -97,6 +97,8 @@ On a wide screen, the content will be split into multiple columns with a compact
 <canvas id="myCanvas" width="400" height="400" style="display: inline-block; background-color: pink; border: 1px solid #d3d3d3; border-radius: 3px;">
 Your browser does not support the HTML canvas tag.</canvas>
 <script>
+	const paragraph = document.getElementById("myWords");
+	paragraph.innerHTML = paragraph.innerHTML + `${documentcompatMode}`; 
 	const zeroPad = (num, places) => String(num).padStart(places, '0')
 
 console.log(zeroPad(5, 2)); // "05"
