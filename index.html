@@ -119,98 +119,99 @@ XHTML 1.1
 	<div id="myWords">
 		Explanation:
 		<ul>
-			<li>column-width: Specifies the desired width of each column. The browser will adjust the number of columns based on the available space.</li>
-			<li>column-gap: Sets the spacing between columns. A smaller value makes the layout more compact.</li>
-			<li>column-rule: Adds a visual divider between columns (optional).</li>
+		<li>column-width: Specifies the desired width of each column. The browser will adjust the number of columns based on the available space.</li>
+		<li>column-gap: Sets the spacing between columns. A smaller value makes the layout more compact.</li>
+		<li>column-rule: Adds a visual divider between columns (optional).</li>
 		</ul>
 		Key Notes:
 		<ul>
-			<li>The browser determines the number of columns based on the column-width and the container's width.</li>
-			<li>If the container is resized (e.g., on smaller screens), the number of columns will automatically adjust to fit the available space.</li>
+		<li>The browser determines the number of columns based on the column-width and the container's width.</li>
+		<li>If the container is resized (e.g., on smaller screens), the number of columns will automatically adjust to fit the available space.</li>
 		</ul>
 		Example Output:
 		<ul>
-			<li>On a wide screen, the content will be split into multiple columns with a compact layout. On smaller screens, fewer columns will appear, maintaining readability.</li>
+		<li>On a wide screen, the content will be split into multiple columns with a compact layout. On smaller screens, fewer columns will appear, maintaining readability.</li>
 		</ul>
 		Values of document.compatMode:
 		<ol>
-			<li>"CSS1Compat": Indicates that the document is in Standards Mode (or Almost Standards Mode). This happens when a proper <!DOCTYPE> declaration is present at the top of the HTML document.</li>
-			<li>"BackCompat": Indicates that the document is in Quirks Mode. This occurs when the <!DOCTYPE> declaration is missing or incorrect.</li>
+		<li>"CSS1Compat": Indicates that the document is in Standards Mode (or Almost Standards Mode). This happens when a proper <!DOCTYPE> declaration is present at the top of the HTML document.</li>
+		<li>"BackCompat": Indicates that the document is in Quirks Mode. This occurs when the <!DOCTYPE> declaration is missing or incorrect.</li>
 		</ol>
 	</div>
 
 	<img style="opacity: 0.6" class="rounded-image" src="./高樓的風(small).jpg" id="lampSmall" width="220" height="auto">
-	<img class="rounded-image" src="./高樓的風(tiny).jpg" id="lampTiny" width="100" height="auto">
 
-<canvas id="myCanvas" width="400" height="400" style="display: inline-block; background-color: pink; border: 1px solid #d3d3d3; border-radius: 3px;">
-Your browser does not support the HTML canvas tag.</canvas>
-<script>
-	const paragraph = document.getElementById("myWords");
-	const save = paragraph.innerHTML;
-	paragraph.innerHTML = save + `Big deal: <em>${document.compatMode}<\em>`;
-	console.log(document.compatMode);
-	const zeroPad = (num, places) => String(num).padStart(places, '0')
+	<img style="opacity: 0.9" class="rounded-image" src="./高樓的風(tiny).jpg" id="lampTiny" width="100" height="auto">
 
-console.log(zeroPad(5, 2)); // "05"
-	const colors = ["purple", "powderblue", "teal", "khaki", "red", "blue", "green", "gray", "orange", "rgb(255,165,0)", "rgb(100,100,100)", "black"];
-	const ctx = document.getElementById("myCanvas").getContext("2d");
-	//ctx.font = "30px Arial";
-	//ctx.fillText("Hello World", 10, 50);
-	const countMax = 20;
-	let myCount = 0;
-	let myCircles = []
-	const stopCond = setInterval(() => {
-		const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
-		const pat = ctx.createPattern(img, "repeat");
-		const min = 20;
-		const max = 50;
-
-		let x = Math.floor(Math.random() * myCanvas.width);
-		let y = Math.floor(Math.random() * myCanvas.height);
-		let rho = Math.floor(Math.random() * (max - min + 1)) + min;
-		let r = Math.floor(Math.random() * 256);
-		let g = Math.floor(Math.random() * 256);
-		let b = Math.floor(Math.random() * 256);
-		let col = Math.floor(Math.random() * 12);
-		for (const circle of myCircles) {
-			const a = x - circle[0];
-			const b = y - circle[1];
-			if (Math.sqrt(a*a + b*b) < rho + circle[2]) return;
-		}
-		myCircles.push([x, y, rho]);
-		myCount = myCount + 1;
-			
-		ctx.beginPath();
-		ctx.arc(x, y, rho, 0, 2 * Math.PI);
-		ctx.stroke();
-		ctx.fillStyle = pat;//colors[col];//rgb(r,g,b); //red
-		ctx.fill();
-		ctx.fillStyle = "orange"//`rgb(${r}, ${g}, ${b})`;//"red";
-		if (myCount == countMax)
-			ctx.fillStyle="crimson";
-		ctx.font = "12px serif";
-			//ctx.font = "10px monospace";
-			ctx.textAlign = "center";  // horizontal alignment
-			ctx.textBaseline = "middle";  // vertical alignment
-			//ctx.fillText("Koch", 10, 10);
-			//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x, y);
-			ctx.fillText(myCircles.length, x, y);
-		//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x - 9, y + 5);
-
-		if (myCircles.length == 20) clearInterval(stopCond);
-
-	}, 500);
-</script>
+	<canvas id="myCanvas" width="400" height="400" style="display: inline-block; background-color: pink; border: 1px solid #d3d3d3; border-radius: 3px;">
+	Your browser does not support the HTML canvas tag.</canvas>
+	<script>
+		const paragraph = document.getElementById("myWords");
+		const save = paragraph.innerHTML;
+		paragraph.innerHTML = save + `Big deal: <em>${document.compatMode}<\em>`;
+		console.log(document.compatMode);
+		const zeroPad = (num, places) => String(num).padStart(places, '0')
+	
+	console.log(zeroPad(5, 2)); // "05"
+		const colors = ["purple", "powderblue", "teal", "khaki", "red", "blue", "green", "gray", "orange", "rgb(255,165,0)", "rgb(100,100,100)", "black"];
+		const ctx = document.getElementById("myCanvas").getContext("2d");
+		//ctx.font = "30px Arial";
+		//ctx.fillText("Hello World", 10, 50);
+		const countMax = 20;
+		let myCount = 0;
+		let myCircles = []
+		const stopCond = setInterval(() => {
+			const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
+			const pat = ctx.createPattern(img, "repeat");
+			const min = 20;
+			const max = 50;
+	
+			let x = Math.floor(Math.random() * myCanvas.width);
+			let y = Math.floor(Math.random() * myCanvas.height);
+			let rho = Math.floor(Math.random() * (max - min + 1)) + min;
+			let r = Math.floor(Math.random() * 256);
+			let g = Math.floor(Math.random() * 256);
+			let b = Math.floor(Math.random() * 256);
+			let col = Math.floor(Math.random() * 12);
+			for (const circle of myCircles) {
+				const a = x - circle[0];
+				const b = y - circle[1];
+				if (Math.sqrt(a*a + b*b) < rho + circle[2]) return;
+			}
+			myCircles.push([x, y, rho]);
+			myCount = myCount + 1;
+				
+			ctx.beginPath();
+			ctx.arc(x, y, rho, 0, 2 * Math.PI);
+			ctx.stroke();
+			ctx.fillStyle = pat;//colors[col];//rgb(r,g,b); //red
+			ctx.fill();
+			ctx.fillStyle = "orange"//`rgb(${r}, ${g}, ${b})`;//"red";
+			if (myCount == countMax)
+				ctx.fillStyle="crimson";
+			ctx.font = "12px serif";
+				//ctx.font = "10px monospace";
+				ctx.textAlign = "center";  // horizontal alignment
+				ctx.textBaseline = "middle";  // vertical alignment
+				//ctx.fillText("Koch", 10, 10);
+				//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x, y);
+				ctx.fillText(myCircles.length, x, y);
+			//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x - 9, y + 5);
+	
+			if (myCircles.length == 20) clearInterval(stopCond);
+	
+		}, 500);
+	</script>
 
 	<div id="myRef">
 		<ul>
-			<li><a href="./index.html">Home</a></li>
-			<li><a href="./about.html">About</a></li>
-			<li><a href="./products.html">Products</a></li>
-			<li><a href="./workable/plural-s-vs-es.html">複數名詞</a></li>
-			<li><a href="./workable/prime-factors.html">質因數</a></li>
-			<li><a href="./workable/big-big-factorial.html">階乘</a></li>
-			<li><a href="./workable/is-it-a-leap-year.html">閏年判別</a></li>
+		<li><a href="./index.html">Home</a></li>
+		<li><a href="./about.html">About</a></li>
+		<li><a href="./products.html">Products</a></li>
+		<li><a href="./workable/plural-s-vs-es.html">複數名詞</a></li>
+		<li><a href="./workable/prime-factors.html">質因數</a></li>
+		<li><a href="./workable/big-big-factorial.html">階乘</a></li>
+		<li><a href="./workable/is-it-a-leap-year.html">閏年判別</a></li>
 		</ul>
 	</div>
 
