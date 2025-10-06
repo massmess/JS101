@@ -205,7 +205,7 @@ XHTML 1.1
 			ctx.font = "12px serif";
 			//ctx.font = "10px monospace";
 			ctx.textAlign = "center";  // horizontal alignment
-			ctx.textBaseline = "alphabetic";  // vertical alignment
+			ctx.textBaseline = "middle";  // vertical alignment
 			//ctx.fillText("Koch", 10, 10);
 			//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x, y);
 			ctx.fillText(myCircles.length, x, y);
@@ -213,7 +213,7 @@ XHTML 1.1
 	
 			if (myCircles.length == 20) {
 				ctx.beginPath();
-				ctx.arc(x, y-1, 10, 0, 2 * Math.PI);
+				ctx.arc(x, y-2, 10, 0, 2 * Math.PI);
 				ctx.strokeStyle = "white";
 				ctx.lineWidth = 1;
 				ctx.stroke();
