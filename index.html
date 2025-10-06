@@ -115,7 +115,7 @@ On a wide screen, the content will be split into multiple columns with a compact
 Your browser does not support the HTML canvas tag.</canvas>
 <script>
 	const paragraph = document.getElementById("myWords");
-	paragraph.innerHTML = paragraph.innerHTML + `\n<em>Big deal: ${document.compatMode}<\em>`; console.log(document.compatMode);
+	paragraph.innerHTML = paragraph.innerHTML + `<br><em>Big deal: ${document.compatMode}<\em>`; console.log(document.compatMode);
 	const zeroPad = (num, places) => String(num).padStart(places, '0')
 
 console.log(zeroPad(5, 2)); // "05"
