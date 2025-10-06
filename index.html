@@ -40,12 +40,6 @@ XHTML 1.1
 			border-radius: 3px;
 		}
 
-		#myRef {
-			font-family: sans-serif;
-			font-size: 1em;
-			text-align: left;
-		}
-
 		.S1{
 			font-size: 4em;
 		}
@@ -110,6 +104,24 @@ XHTML 1.1
 			font-family: Cosolas;
 			font-size: 12px;
 			border-radius: 2px;
+		}
+
+		#myRef {
+			font-family: sans-serif;
+			font-size: 1em;
+			text-align: left;
+		}
+
+		.wrap-flex {
+			display: flex;
+			align-items: stretch;
+		}
+
+		.wrap-flex > * {
+			width: 33.3%;
+			padding: 10px;
+			margin: 2px;
+			border: 1px solid red;
 		}
 	</style>
 
@@ -223,6 +235,12 @@ XHTML 1.1
 		<div id = "two" class="display">Second Division</div>
 		<div class="display">Third Division</div>
 		<div class="display">Fourth Division</div>
+	</div>
+
+	<div class="wrap-flex">
+		<p>Morons.</p>
+		<span>Short takes.</span>
+		<p>Sunny days.</p>
 	</div>
 
 	<script>
