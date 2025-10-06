@@ -240,11 +240,13 @@ XHTML 1.1
 	<div class="wrap-flex">
 		<p>Morons.</p>
 		<span>Short takes.</span>
-		<button type="radio" name="message">Click Me</button>
+		<button id="knock" type="button" name="message">Click Me</button>
 		<textarea name="message" placeholder="Sunny days..."></textarea>
 	</div>
 
 	<script>
+		getElementById("knock").addEventListener('click', () => {
+		});
 			const NUM = 3000000;
 			let s = 0;
 			for (let i = 0; i < NUM; i++){
