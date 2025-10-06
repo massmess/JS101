@@ -113,6 +113,7 @@ XHTML 1.1
 		}
 
 		.wrap-flex {
+			margin: 8px;
 			display: flex;
 			align-items: stretch;
 		}
@@ -243,11 +244,15 @@ XHTML 1.1
 		<button type="button" name="message">Click Me</button>
 		<textarea name="message" placeholder="Sunny days..."></textarea>
 	</div>
-		<button id="knock" type="button" name="message">Click Me</button>
+	<p id="this"></p>
+	<button id="knock" type="button" name="message">Click Me</button>
 
 	<script>
-		getElementById("knock").addEventListener('click', () => {
-		});
+		document.getElementById("this").addEventListener(
+			'click', () => {
+				document.getElementById("this").innerHTML = "Hoye!";
+			}
+		);
 			const NUM = 3000000;
 			let s = 0;
 			for (let i = 0; i < NUM; i++){
