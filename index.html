@@ -124,6 +124,7 @@ console.log(zeroPad(5, 2)); // "05"
 	const ctx = document.getElementById("myCanvas").getContext("2d");
 	//ctx.font = "30px Arial";
 	//ctx.fillText("Hello World", 10, 50);
+	const countMax = 20;
 	let myCount = 0;
 	let myCircles = []
 	const stopCond = setInterval(() => {
@@ -153,7 +154,7 @@ console.log(zeroPad(5, 2)); // "05"
 		ctx.fillStyle = pat;//colors[col];//rgb(r,g,b); //red
 		ctx.fill();
 		ctx.fillStyle = "orange"//`rgb(${r}, ${g}, ${b})`;//"red";
-		if (myCount == 30)
+		if (myCount == countMax)
 			ctx.fillStyle="crimson";
 		ctx.font = "12px serif";
 			//ctx.font = "10px monospace";
