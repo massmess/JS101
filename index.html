@@ -212,7 +212,9 @@ XHTML 1.1
 			//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x - 9, y + 5);
 	
 			if (myCircles.length == 20) {
-				ctx.arc(x, y, 8, 0, 2 * Math.PI);
+				ctx.beginPath();
+				ctx.arc(x, y, 10, 0, 2 * Math.PI);
+				ctx.strokeStyle = "white";
 				ctx.stroke();
 				clearInterval(stopCond);
 			}
