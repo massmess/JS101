@@ -44,10 +44,8 @@ function drawIt() {
 			ctx.arc(x, y - 1, 10, 0, 2 * Math.PI);
 			ctx.strokeStyle = "crimson";
 			ctx.stroke();
-			if (circles.length == 20) clearInterval(interval);
+			if (circles.length == 20) {clearInterval(interval);return count;
 		}
 
 	}, 100);
-console.log(`Inside drawIt(): ${count}`)
-	return count;
 }
