@@ -1,4 +1,5 @@
-function drawIt() {
+function drawIt() 
+document.querySelector("textarea").value = "I'm here.";
 	const canvas = document.getElementById("myCanvas");
 	const ctx = canvas.getContext("2d");
 	const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
