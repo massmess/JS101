@@ -17,6 +17,8 @@ function drawIt() {
 		let y = Math.floor(Math.random() * canvas.height);
 		let r = Math.floor(Math.random() * (max - min + 1)) + min;
 
+		count = count + 1;
+
 		for (const one of circles) {
 			const a = x - one[0];
 			const b = y - one[1];
@@ -24,7 +26,6 @@ function drawIt() {
 		}
 
 		circles.push([x, y, r]);
-		count = count + 1;
 
 		ctx.beginPath();
 		ctx.arc(x, y, r, 0, 2 * Math.PI);
