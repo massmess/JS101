@@ -14,7 +14,7 @@ function drawIt() {
 
 	const interval = setInterval(() => {
 		count = count + 1;
-		console.log(`Inside Anonymous(): ${count}`)
+		console.log(`Inside Anonymous(): ${count}`);
 
 		let x = Math.floor(Math.random() * canvas.width);
 		let y = Math.floor(Math.random() * canvas.height);
