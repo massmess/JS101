@@ -8,6 +8,8 @@ function drawIt() {
 	let count = 0;
 	let circles = []
 
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
 	const interval = setInterval(() => {
 		let x = Math.floor(Math.random() * canvas.width);
 		let y = Math.floor(Math.random() * canvas.height);
