@@ -8,7 +8,7 @@ drawIt() {
 
 	const interval = setInterval(() => {
 		const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
-		const pat = ctx.createPattern(img, "repeat");
+		const pattern = ctx.createPattern(img, "repeat");
 		const min = 20;
 		const max = 50;
 
@@ -26,17 +26,13 @@ drawIt() {
 		ctx.beginPath();
 		ctx.arc(x, y, r, 0, 2 * Math.PI);
 		ctx.stroke();
-		ctx.fillStyle = pat;//colors[col];//rgb(r,g,b); //red
+		ctx.fillStyle = pattern;
 		ctx.fill();
-		ctx.fillStyle = "orange"//`rgb(${r}, ${g}, ${b})`;//"red";
+		ctx.fillStyle = "orange";
 		ctx.font = "12px serif";
-		//ctx.font = "10px monospace";
 		ctx.textAlign = "center";  // horizontal alignment
 		ctx.textBaseline = "middle";  // vertical alignment
-		//ctx.fillText("Koch", 10, 10);
-		//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x, y);
 		ctx.fillText(circles.length, x, y);
-		//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x - 9, y + 5);
 
 		if (circles.length == 20) {
 			ctx.beginPath();
