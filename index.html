@@ -169,11 +169,10 @@ XHTML 1.1
 		const ctx = document.getElementById("myCanvas").getContext("2d");
 		//ctx.font = "30px Arial";
 		//ctx.fillText("Hello World", 10, 50);
-		const countMax = 20;
 		let myCount = 0;
-		let myCircles = []
+		let Circles = []
 
-		/*const stopCond = setInterval(() => {
+		const interval = setInterval(() => {
 			const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
 			const pat = ctx.createPattern(img, "repeat");
 			const min = 20;
@@ -181,17 +180,13 @@ XHTML 1.1
 	
 			let x = Math.floor(Math.random() * myCanvas.width);
 			let y = Math.floor(Math.random() * myCanvas.height);
-			let rho = Math.floor(Math.random() * (max - min + 1)) + min;
-			let r = Math.floor(Math.random() * 256);
-			let g = Math.floor(Math.random() * 256);
-			let b = Math.floor(Math.random() * 256);
-			let col = Math.floor(Math.random() * 12);
-			for (const circle of myCircles) {
-				const a = x - circle[0];
-				const b = y - circle[1];
-				if (Math.sqrt(a*a + b*b) < rho + circle[2]) return;
+			let r = Math.floor(Math.random() * (max - min + 1)) + min;
+			for (const one of Circles) {
+				const a = x - one[0];
+				const b = y - one[1];
+				if (Math.sqrt(a*a + b*b) < r + one[2]) return;
 			}
-			myCircles.push([x, y, rho]);
+			Circles.push([x, y, r]);
 			myCount = myCount + 1;
 				
 			ctx.beginPath();
@@ -200,26 +195,24 @@ XHTML 1.1
 			ctx.fillStyle = pat;//colors[col];//rgb(r,g,b); //red
 			ctx.fill();
 			ctx.fillStyle = "orange"//`rgb(${r}, ${g}, ${b})`;//"red";
-			if (myCount == countMax)
-				ctx.fillStyle="crimson";
 			ctx.font = "12px serif";
 			//ctx.font = "10px monospace";
 			ctx.textAlign = "center";  // horizontal alignment
 			ctx.textBaseline = "middle";  // vertical alignment
 			//ctx.fillText("Koch", 10, 10);
 			//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x, y);
-			ctx.fillText(myCircles.length, x, y);
+			ctx.fillText(Circles.length, x, y);
 			//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x - 9, y + 5);
 	
-			if (myCircles.length == 20) {
+			if (Circles.length == 20) {
 				ctx.beginPath();
 				ctx.arc(x, y - 1, 10, 0, 2 * Math.PI);
 				ctx.strokeStyle = "white";
 				ctx.lineWidth = 1;
 				ctx.stroke();
-				clearInterval(stopCond);
+				clearInterval(interval);
 			}
-		}, 100);*/
+		}, 100);
 	</script>
 
 	<div id="myRef">
@@ -251,7 +244,7 @@ XHTML 1.1
 	<p id="this">Her we go.</p>
 	<button id="knock" type="button" name="message">Click Me</button>
 	
-		<script type="text/javascript" src="draw-circles.js"></script>
+	//<script type="text/javascript" src="draw-circles.js"></script>
 
 	<script>
 		document.getElementById("knock").addEventListener(
