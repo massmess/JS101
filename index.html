@@ -171,7 +171,7 @@ XHTML 1.1
 		console.log(`After drawIt(): ${drawIt()}`);
 	</script>
 
-	<div id="myRef
+	<div id="myRef">
 		<h3>OPTIONS</h3>
 		<ul>
 		<li><a href="./workable/plural-s-vs-es.html">複數名詞</a></li>
@@ -201,13 +201,7 @@ XHTML 1.1
 	<p id="this">Her we go.</p>
 	<input id="knock" type="button" value="Click Me" onclick="drawIt()">
 	
-	<script>/*
-		document.getElementById("knock").addEventListener(
-			'click', () => {
-				document.getElementById("this").innerHTML = "Hoye! " + hearme;
-			}
-		);*/
-		
+	<script>
 		const NUM = 3000000;
 		let s = 0;
 		for (let i = 0; i < NUM; i++){
@@ -222,7 +216,7 @@ XHTML 1.1
 		///*(*/() => {
 			let qwerty = window.setInterval(() => {
 				++cnt;
-				if (cnt == 10) window.clearInterval(qwerty);
+				if (cnt == 4) window.clearInterval(qwerty);
 				d.innerHTML += `&rArr;(${cnt.toString()})`;
 
 				if (cnt % 2 == 0) {
@@ -233,7 +227,6 @@ XHTML 1.1
 					d.style.color = "white";
 					d.style.backgroundColor = "black";
 					d.style.opacity=0.5;
-
 				}
 		}, 100);
 		//}/*)()*/;
