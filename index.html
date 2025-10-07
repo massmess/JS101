@@ -224,13 +224,13 @@ XHTML 1.1
 
 	<div id="myRef">
 		<ul>
-		<li><a href="./products.html">Products</a></li>
 		<li><a href="./workable/plural-s-vs-es.html">複數名詞</a></li>
 		<li><a href="./workable/prime-factors.html">質因數</a></li>
 		<li><a href="./workable/big-big-factorial.html">階乘</a></li>
 		<li><a href="./workable/is-it-a-leap-year.html">閏年判別</a></li>
 		<li><a href="./index.html">Home</a></li>
 		<li><a href="./about.html">About</a></li>
+		<li><a href="./products.html">Products</a></li>
 		</ul>
 	</div>
 
@@ -263,7 +263,7 @@ XHTML 1.1
 			let n = (Math.floor(Math.random() * NUM)) + 1;
 			s += leap(n);
 		}
-		console.log(s);
+		document.getElementById("this").innerHTML = document.getElementById("this").innerHTML + " All the leap years: " + String{s};
 		document.getElementById("two").innerHTML = (s / NUM).toString();
 		let cnt = 0;
 		let d = document.getElementById("roboto");
