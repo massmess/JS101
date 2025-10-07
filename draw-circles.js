@@ -45,6 +45,6 @@ function drawIt() {
 			if (circles.length == 20) clearInterval(interval);
 		}
 	}, 100);
-consoloe.log(`Inside drawIt(): ${count}`)
+console.log(`Inside drawIt(): ${count}`)
 	return count;
 }
