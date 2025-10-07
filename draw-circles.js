@@ -23,7 +23,7 @@ function drawIt() {
 		for (const one of circles) {
 			const a = x - one[0];
 			const b = y - one[1];
-			if (Math.sqrt(a*a + b*b) < r + one[2]) return;
+			if (Math.sqrt(a * a + b * b) < r + one[2]) return;
 		}
 
 		circles.push([x, y, r]);
@@ -44,7 +44,7 @@ function drawIt() {
 			ctx.arc(x, y - 1, 10, 0, 2 * Math.PI);
 			ctx.strokeStyle = "crimson";
 			ctx.stroke();
-			if (circles.length == 20) {clearInterval(interval);return count;
+			if (circles.length == 20) clearInterval(interval);
 		}
 
 	}, 100);
