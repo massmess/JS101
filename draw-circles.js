@@ -1,12 +1,10 @@
 drawIt() {
-	const canvas = document.getElementById("myCanvas"):
-	const ctx = canvas.getContext("2d");
-	let count = 0;
-	let circles = [];
+		const canvas = document.getElementById("myCanvas");
+		const ctx = canvas.getContext("2d");
+		let count = 0;
+		let circles = []
 
-	ctx.lineWidth = 1;
-
-	const interval = setInterval(() => {
+		const interval = setInterval(() => {
 		const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
 		const pattern = ctx.createPattern(img, "repeat");
 		const min = 20;
@@ -39,7 +37,7 @@ drawIt() {
 			ctx.arc(x, y - 1, 10, 0, 2 * Math.PI);
 			ctx.strokeStyle = "crimson";
 			ctx.stroke();
-			clearInterval(interval);
+			if (circles.length == 20) clearInterval(interval);
 		}
 	}, 100);
 }
