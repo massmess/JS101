@@ -13,11 +13,12 @@ function drawIt() {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 	const interval = setInterval(() => {
+		count = count + 1;
+		console.log(`Inside Anonymous(): ${count}`)
+
 		let x = Math.floor(Math.random() * canvas.width);
 		let y = Math.floor(Math.random() * canvas.height);
 		let r = Math.floor(Math.random() * (max - min + 1)) + min;
-
-		count = count + 1;
 
 		for (const one of circles) {
 			const a = x - one[0];
@@ -44,7 +45,7 @@ function drawIt() {
 			ctx.strokeStyle = "crimson";
 			ctx.stroke();
 			if (circles.length == 20) clearInterval(interval);
-		}console.log(`Inside Anonymous(): ${count}`)
+		}
 
 	}, 100);
 console.log(`Inside drawIt(): ${count}`)
