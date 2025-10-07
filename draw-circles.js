@@ -1,4 +1,4 @@
-function drawIt() 
+function drawIt() {
 document.querySelector("textarea").value = "I'm here.";
 	const canvas = document.getElementById("myCanvas");
 	const ctx = canvas.getContext("2d");
