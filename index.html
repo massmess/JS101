@@ -174,7 +174,7 @@ XHTML 1.1
 		let myCount = 0;
 		let Circles = []
 
-		const interval = setInterval(() => {
+		/* const interval = setInterval(() => {
 			const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
 			const pat = ctx.createPattern(img, "repeat");
 			const min = 20;
@@ -202,9 +202,8 @@ XHTML 1.1
 			ctx.textAlign = "center";  // horizontal alignment
 			ctx.textBaseline = "middle";  // vertical alignment
 			//ctx.fillText("Koch", 10, 10);
-			//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x, y);
+			
 			ctx.fillText(Circles.length, x, y);
-			//ctx.fillText(zeroPad(myCount, 3).toString()/*myCount.toString()*/, x - 9, y + 5);
 	
 			if (Circles.length == 20) {
 				ctx.beginPath();
@@ -214,7 +213,8 @@ XHTML 1.1
 				ctx.stroke();
 				clearInterval(interval);
 			}
-		}, 100);
+		}, 100); */
+		
 	</script>
 
 	<div id="myRef">
