@@ -167,7 +167,7 @@ XHTML 1.1
 		const paragraph = document.getElementById("myWords");
 		const save = paragraph.innerHTML;
 		paragraph.innerHTML = save + `Big deal: <em>${document.compatMode}<\em>`;
-		//const canvas = document.getElementById("myCanvas");
+		const canvas = document.getElementById("myCanvas");
 		const ctx = document.getElementById("myCanvas").getContext("2d");
 		//ctx.font = "30px Arial";
 		//ctx.fillText("Hello World", 10, 50);
@@ -214,7 +214,7 @@ XHTML 1.1
 				clearInterval(interval);
 			}
 		}, 100); */
-/*
+
 		const interval = setInterval(() => {
 		const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
 		const pattern = ctx.createPattern(img, "repeat");
@@ -250,7 +250,7 @@ XHTML 1.1
 			ctx.stroke();
 			if (circles.length == 20) clearInterval(interval);
 		}
-	}, 100);*/
+	}, 100);
 
 	</script>
 
