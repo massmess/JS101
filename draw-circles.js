@@ -30,7 +30,7 @@ function drawIt() {
 
 		ctx.beginPath();
 		ctx.arc(x, y, r, 0, 2 * Math.PI);
-		ctx.strokeStyle = "purple";
+		ctx.strokeStyle = "darkgray";
 		ctx.stroke();
 
 		ctx.fillStyle = pattern;
