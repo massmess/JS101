@@ -1,4 +1,5 @@
-		const interval = setInterval(() => {
+const hearme = "you shithead";
+const interval = setInterval(() => {
 			const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
 			const pat = ctx.createPattern(img, "repeat");
 			const min = 20;
