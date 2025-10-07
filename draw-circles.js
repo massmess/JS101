@@ -43,7 +43,8 @@ function drawIt() {
 			ctx.strokeStyle = "crimson";
 			ctx.stroke();
 			if (circles.length == 20) clearInterval(interval);
-		}
+		}console.log(`Inside Anonymous(): ${count}`)
+
 	}, 100);
 console.log(`Inside drawIt(): ${count}`)
 	return count;
