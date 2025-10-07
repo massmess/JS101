@@ -8,7 +8,7 @@ function drawIt() {
 	const max = 50;
 
 	let count = 0;
-	let circles = []
+	let circles = [];
 
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
