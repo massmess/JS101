@@ -3,8 +3,10 @@ function drawIt() {
 	const ctx = canvas.getContext("2d");
 	const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
 	const pattern = ctx.createPattern(img, "repeat");
+
 	const min = 20;
 	const max = 50;
+
 	let count = 0;
 	let circles = []
 
@@ -23,7 +25,7 @@ function drawIt() {
 
 		circles.push([x, y, r]);
 		count = count + 1;
-		
+
 		ctx.beginPath();
 		ctx.arc(x, y, r, 0, 2 * Math.PI);
 		ctx.stroke();
@@ -43,4 +45,6 @@ function drawIt() {
 			if (circles.length == 20) clearInterval(interval);
 		}
 	}, 100);
+
+	return count;
 }
