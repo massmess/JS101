@@ -221,8 +221,8 @@ XHTML 1.1
 		const min = 20;
 		const max = 50;
 
-		let x = Math.floor(Math.random() * myCanvas.width);
-		let y = Math.floor(Math.random() * myCanvas.height);
+		let x = Math.floor(Math.random() * canvas.width);
+		let y = Math.floor(Math.random() * canvas.height);
 		let r = Math.floor(Math.random() * (max - min + 1)) + min;
 		for (const one of circles) {
 			const a = x - one[0];
@@ -248,7 +248,7 @@ XHTML 1.1
 			ctx.arc(x, y - 1, 10, 0, 2 * Math.PI);
 			ctx.strokeStyle = "crimson";
 			ctx.stroke();
-			clearInterval(interval);
+			if (circles.length == 20) clearInterval(interval);
 		}
 	}, 100);
 
