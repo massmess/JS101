@@ -44,7 +44,7 @@ function drawIt() {
 
 		if (circles.length == 1 || circles.length == 20) {
 			ctx.beginPath();
-			ctx.arc(x, y - 1, 10, 0, 2 * Math.PI);
+			ctx.arc(x, y - 1, 8, 0, 2 * Math.PI);
 			ctx.strokeStyle = "crimson";
 			ctx.stroke();
 			if (circles.length == 20) clearInterval(interval);
