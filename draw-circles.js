@@ -30,9 +30,12 @@ function drawIt() {
 
 		ctx.beginPath();
 		ctx.arc(x, y, r, 0, 2 * Math.PI);
+		ctx.strokeStyle = purple;
 		ctx.stroke();
+
 		ctx.fillStyle = pattern;
 		ctx.fill();
+
 		ctx.fillStyle = "orange";
 		ctx.font = "12px serif";
 		ctx.textAlign = "center";  // horizontal alignment
