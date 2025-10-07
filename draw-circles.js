@@ -1,4 +1,4 @@
-drawIt() {
+function drawIt() {
 		const canvas = document.getElementById("myCanvas");
 		const ctx = canvas.getContext("2d");
 		let count = 0;
