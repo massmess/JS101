@@ -55,16 +55,16 @@ body {
 			color: white;
 			background-color: black;
 		}
-	
-		#roboto {
-			color: white;
-			background-image: url("高樓的風.jpg");
-			opacity: 0.5;
-			width: max-content;
-			text-align: left;
-			font-family: Roboto;
-			font-size: 1.5rem;
-		}
+
+#roboto {
+	color: white;
+	background-image: url("高樓的風.jpg");
+	opacity: 0.5;
+	width: max-content;
+	text-align: left;
+	font-family: Roboto;
+	font-size: 1.5rem;
+}
 	
 		#serif {
 			font-family: serif;
