@@ -39,16 +39,15 @@ body {
 #roboto {
 	color: white;
 	background-image: url("高樓的風.jpg");
-	opacity: 0.3;
-	width: max-content;
-	height: 20rem;
+	opacity: 0.2;
+	height: 10rem;
 	text-align: left;
 	font-family: Roboto, "Courier New";
 	font-size: 1.25rem;
 }
 
 .display {
-	width: 10rem;
+	width: fit-content;
 	height: auto;
 	<!---text-align: center;--->
 	display: inline-block;
