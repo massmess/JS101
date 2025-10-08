@@ -36,43 +36,40 @@
 	</div>
 
 	<img style="opacity: 0.5" class="rounded-image" src="./高樓的風(small).jpg" id="lampSmall" width="200" height="auto">
-
 	<img style="opacity: 0.8" class="rounded-image" src="./高樓的風(tiny).jpg" id="lampTiny" width="100" height="auto">
-
 	<canvas id="myCanvas" width="400" height="400" style="display: inline-block; background-color: pink; border: 1px solid #d3d3d3; border-radius: 3px;">
 	Your browser does not support the HTML canvas tag.</canvas>
+	<input id="knock" type="button" value="Click Me" onclick="drawIt()">
 
 	<script>
 		const paragraph = document.getElementById("myWords");
 		let save = paragraph.innerHTML;
 		paragraph.innerHTML = save + `Big deal: <em>${document.compatMode}<\em>`;
 		// initial drawing
-		//console.log(`After drawIt(): ${drawIt()}`);
 		drawIt();
 	</script>
-	<p>
-		<div id="myRef">
-			<h3>OPTIONS</h3>
-			<ul>
-			<li><a href="./workable/plural-s-vs-es.html">複數名詞</a></li>
-			<li><a href="./workable/prime-factors.html">質因數</a></li>
-			<li><a href="./workable/big-big-factorial.html">階乘</a></li>
-			<li><a href="./workable/is-it-a-leap-year.html">閏年判別</a></li>
-			<li><a href="./index.html">Home</a></li>
-			<li><a href="./about.html">About</a></li>
-			<li><a href="./products.html">Products</a></li>
-			</ul>
-		</div>
-	</p>
+
+	<p><div id="myRef">
+		<h3>OPTIONS</h3>
+		<ul>
+		<li><a href="./workable/plural-s-vs-es.html">複數名詞</a></li>
+		<li><a href="./workable/prime-factors.html">質因數</a></li>
+		<li><a href="./workable/big-big-factorial.html">階乘</a></li>
+		<li><a href="./workable/is-it-a-leap-year.html">閏年判別</a></li>
+		<li><a href="./index.html">Home</a></li>
+		<li><a href="./about.html">About</a></li>
+		<li><a href="./products.html">Products</a></li>
+		</ul>
+	</div></p>
+
 	<div class="wrap-flex">
 		<div id="roboto">For text to be formatted: </div>
-		<div id = "two">Second Division</div>
+		<div id="two">Second Division</div>
 		<div>Third Division</div>
 		<div>Fourth Division</div>
 	</div>
 
 	<p id="this">Her we go.</p>
-	<input id="knock" type="button" value="Click Me" onclick="drawIt()">
 	
 	<script>
 		const NUM = 3000000;
