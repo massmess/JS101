@@ -89,13 +89,13 @@
 			let qwerty = window.setInterval(() => {
 				++cnt;
 				if (cnt == 73) window.clearInterval(qwerty);
-				d.innerHTML = save + `<em>(${cnt.toString()})</em>`;
+				d.innerHTML = save + `<em>${cnt.toString()}</em>`;
 
 				if (cnt % 2 == 0) {
-					d.style.color = `hsla(50, 20%, 15%, 0.7)`;
+					d.style.color = `hsla(120, 20%, 15%, 0.75)`;
 					d.style.opacity = 0.95;
 				} else {
-					d.style.color = `hsla(0, 80%, 20%, 0.9)`;
+					d.style.color = `hsla(0, 90%, 20%, 0.95)`;
 					d.style.opacity = 0.75;
 				}
 			}, 3000);
