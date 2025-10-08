@@ -5,9 +5,7 @@ HTML 4.01 Transitional
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "//www.w3.org/TR/html4/loose.dtd">
 HTML 4.01 Frameset
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "//www.w3.org/TR/html4/frameset.dtd">
-*/
 
-/*
 XHTML 1.0 Strict
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 XHTML 1.0 Transitional
@@ -86,37 +84,37 @@ body {
 			padding: 4px;
 		}
 
-		a:hover {
-			color: hsl(0, 100%, 40%);
-			background-color: powderblue;
-			opacity: 0.95;
-		}
+a:hover {
+	color: hsl(0, 100%, 40%);
+	background-color: powderblue;
+	opacity: 0.95;
+}
 
-		#myWords {
-			padding: 4px;
-			margin: 8px;
-			color: white;
-			background-color: dimgray;
-			font-family: Cosolas;
-			font-size: 12px;
-			border-radius: 2px;
-		}
+#myWords {
+	padding: 4px;
+	margin: 8px;
+	color: white;
+	background-color: dimgray;
+	font-family: Cosolas;
+	font-size: 12px;
+	border-radius: 2px;
+}
 
-		#myRef {
-			font-family: sans-serif;
-			font-size: 1em;
-			text-align: left;
-		}
+#myRef {
+	font-family: sans-serif;
+	font-size: 1em;
+	text-align: left;
+}
 
-		.wrap-flex {
-			margin: 8px;
-			display: flex;
-			align-items: stretch;
-		}
+.wrap-flex {
+	margin: 8px;
+	display: flex;
+	align-items: stretch;
+}
 
-		.wrap-flex > * {
-			width: 25%;
-			padding: 10px;
-			margin: 2px;
-			border: 1px solid red;
-		}
+.wrap-flex > * {
+	width: 25%;
+	padding: 10px;
+	margin: 2px;
+	border: 1px solid red;
+}
