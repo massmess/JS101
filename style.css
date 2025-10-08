@@ -42,6 +42,7 @@ body {
 	opacity: 0.2;
 	height: 10rem;
 	text-align: left;
+	text-baseline: middle;
 	font-family: Roboto, "Courier New";
 	font-size: 1.25rem;
 }
