@@ -90,7 +90,7 @@ a:hover {
 }
 
 .wrap-flex > * {
-	width: 25%;
+	width: fit-content;
 	padding: 10px;
 	margin: 2px;
 	border: 1px solid red;
