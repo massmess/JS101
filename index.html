@@ -78,7 +78,7 @@
 		drawIt();
 
 		save = paragraph.innerHTML;
-		const tmp =(s / NUM).toFixed(6).toString();
+		const tmp =(s / NUM).toFixed(4).toString();
 		paragraph.innerHTML = save + `<br>Leap year ratio: <em>${s} / ${NUM} &asymp; ${tmp}.<\em>`;
 
 		let cnt = 0;
