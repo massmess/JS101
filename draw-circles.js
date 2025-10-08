@@ -49,8 +49,8 @@ document.getElementById("knock").disabled = true;
 			ctx.strokeStyle = "crimson";
 			ctx.stroke();
 			if (circles.length == 20) {
-				clearInterval(interval);
 				document.getElementById("knock").disabled = false;
+				clearInterval(interval);
 			}
 		}
 
