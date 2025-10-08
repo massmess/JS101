@@ -24,6 +24,7 @@ body {
 	column-width: 200px;
 	column-gap: 8px;
 	column-rule: 2px dotted rgb(79, 185, 227);
+	align-items: baseline;
 }
 
 .rounded-image {
@@ -86,7 +87,7 @@ a:hover {
 .wrap-flex {
 	margin: 8px;
 	display: flex;
-	align-items: baseline;
+	align-items: stretch;
 }
 
 .wrap-flex > * {
