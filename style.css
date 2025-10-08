@@ -91,7 +91,7 @@ a:hover {
 
 .wrap-flex > * {
 	width: auto;
-	padding: 10px;
+	padding: 6px;
 	margin: 2px;
-	border: 1px solid red;
+	border: 1px dashed hsl(0, 50%, 50%);
 }
