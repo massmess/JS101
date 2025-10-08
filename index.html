@@ -94,7 +94,7 @@
 
 		save = paragraph.innerHTML;
 		const tmp =(s / NUM).toString();
-		paragraph.innerHTML = save + `<br>Big deal 3: <em>${NUM}/${s}=${tmp}.<\em>`;
+		paragraph.innerHTML = save + `<br>Big deal 3: <em>${NUM} / ${s} = ${tmp}.<\em>`;
 
 		document.getElementById("this").innerHTML = document.getElementById("this").innerHTML + " All the leap years: " + String(s);
 		document.getElementById("two").innerHTML = tmp;
@@ -123,6 +123,7 @@
 		<h3>New Fonts Arrived</h3>
 		<span style="font-family: 金萱, cursive;">What is "cursive" font?</span><br>
 		<span style="font-family: Roboto, fantasy;">What is "Roboto" font?</span><br>
+		<span style="font-family: monospace;">What is "monospace" font?</span><br>
 		<span style="font-family: serif;">What is "serif" font?</span><br>
 		<span style="font-family: sans-serif;">What is "sans-serif" font?</span><br>
 	</p>
