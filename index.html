@@ -71,13 +71,6 @@
 		<div>Fourth Division</div>
 	</div>
 
-	<div class="wrap-flex">
-		<p>Morons.</p>
-		<span>Short takes.</span>
-		<input type="button" name="message" value="Click Me">
-		<textarea name="message" placeholder="Sunny days..." readonly></textarea>
-	</div>
-
 	<p id="this">Her we go.</p>
 	<input id="knock" type="button" value="Click Me" onclick="drawIt()">
 	
@@ -93,12 +86,11 @@
 		const tmp =(s / NUM).toFixed(6).toString();
 		paragraph.innerHTML = save + `<br>Leap year ratio: <em>${s} / ${NUM} &#x2245; ${tmp}.<\em>`;
 
-		document.getElementById("this").innerHTML = document.getElementById("this").innerHTML + " All the leap years: " + String(s);
-		document.getElementById("two").innerHTML = tmp;
 		let cnt = 0;
 		let d = document.getElementById("roboto");
 		save = d.innerHTML + "<em>I am good.</em><br>";
-		///*(*/() => {
+	
+		(() => {
 			let qwerty = window.setInterval(() => {
 				++cnt;
 				if (cnt == 53) window.clearInterval(qwerty);
@@ -111,9 +103,10 @@
 					d.style.color = "white";
 					d.style.opacity = 0.6;
 				}
-		}, 3000);
-		//}/*)()*/;
+			}, 3000);
+		})();
 	</script>
+
 	<p>
 		<h3>Basic Fonts in HTML5</h3>
 		<span style="font-family: Roboto;">What is "Roboto" font?</span><br>
