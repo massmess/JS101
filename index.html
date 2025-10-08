@@ -100,7 +100,7 @@
 		///*(*/() => {
 			let qwerty = window.setInterval(() => {
 				++cnt;
-				if (cnt == 4) window.clearInterval(qwerty);
+				if (cnt == 6) window.clearInterval(qwerty);
 				d.innerHTML += `&rArr;(${cnt.toString()})`;
 
 				if (cnt % 2 == 0) {
@@ -112,7 +112,7 @@
 					d.style.backgroundColor = "black";
 					d.style.opacity=0.5;
 				}
-		}, 100);
+		}, 3000);
 		//}/*)()*/;
 	</script>
 
