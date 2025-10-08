@@ -41,14 +41,6 @@
 	Your browser does not support the HTML canvas tag.</canvas>
 	<input id="knock" type="button" value="Click Me" onclick="drawIt()">
 
-	<script>
-		const paragraph = document.getElementById("myWords");
-		let save = paragraph.innerHTML;
-		paragraph.innerHTML = save + `Big deal: <em>${document.compatMode}<\em>`;
-		// initial drawing
-		drawIt();
-	</script>
-
 	<p><div id="myRef">
 		<h3>OPTIONS</h3>
 		<ul>
@@ -78,6 +70,12 @@
 			let n = (Math.floor(Math.random() * NUM)) + 1;
 			s += leap(n);
 		}
+
+		const paragraph = document.getElementById("this");
+		let save = paragraph.innerHTML;
+		paragraph.innerHTML = save + `<br>Big deal: <em>${document.compatMode}<\em>`;
+		// initial drawing
+		drawIt();
 
 		save = paragraph.innerHTML;
 		const tmp =(s / NUM).toFixed(6).toString();
