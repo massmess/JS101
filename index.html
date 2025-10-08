@@ -93,10 +93,11 @@
 		paragraph.innerHTML = save + `<br>Big deal 2: <em># of all the leap years in ${NUM}: ${s}.<\em>`;
 
 		save = paragraph.innerHTML;
-		paragraph.innerHTML = save + `<br>Big deal 3: <em>${NUM}/${s}=${(${s} / ${NUM}).toString()}.<\em>`;
+		const tmp =(s / NUM).toString();
+		paragraph.innerHTML = save + `<br>Big deal 3: <em>${NUM}/${s}=${tmp}.<\em>`;
 
 		document.getElementById("this").innerHTML = document.getElementById("this").innerHTML + " All the leap years: " + String(s);
-		document.getElementById("two").innerHTML = ;
+		document.getElementById("two").innerHTML = tmp;
 		let cnt = 0;
 		let d = document.getElementById("roboto");
 		d.innerHTML += "<em>I am good.</em><br>";
