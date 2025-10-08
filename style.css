@@ -68,25 +68,20 @@ body {
 	font-family: Roboto, "Courier New";
 	font-size: 1.25rem;
 }
-	
-		#serif {
-			font-family: serif;
-			font-size: 1.25rem;
-		}
 
-		.display {
-			width: 10rem;
-			height: auto;
-			<!---text-align: center;--->
-			display: inline-block;
-			flex-flow: row nowrap;
-			justify-content: space-between;
-			color: white;
-			background-color: dimgray;
-			border: 1px dashed red;
-			border-radius: 4px;
-			padding: 4px;
-		}
+.display {
+	width: 10rem;
+	height: auto;
+	<!---text-align: center;--->
+	display: inline-block;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	color: white;
+	background-color: dimgray;
+	border: 1px dashed red;
+	border-radius: 4px;
+	padding: 4px;
+}
 
 a:hover {
 	color: hsl(0, 100%, 40%);
