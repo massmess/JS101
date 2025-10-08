@@ -102,7 +102,7 @@
 			let qwerty = window.setInterval(() => {
 				++cnt;
 				if (cnt == 100) window.clearInterval(qwerty);
-				d.innerHTML = `(${cnt.toString()})`;
+				d.innerHTML += `(${cnt.toString()})`;
 
 				if (cnt % 2 == 0) {
 					d.style.color = "black";
