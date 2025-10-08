@@ -19,7 +19,8 @@ XHTML 1.1
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-	/* white-space: nowrap; Prevent text wrapping */
+	font-family: Roboto;
+	/*white-space: nowrap; Prevent text wrapping*/
 	column-count: 3;
 	column-width: auto;
 	column-gap: 8px;
