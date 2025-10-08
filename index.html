@@ -90,7 +90,7 @@
 		}
 
 		save = paragraph.innerHTML;
-		const tmp =(s / NUM).toString();
+		const tmp =(s / NUM).toFixed(6).toString();
 		paragraph.innerHTML = save + `<br>Big deal 3: <em>${NUM} / ${s} &#x2245; ${tmp}.<\em>`;
 
 		document.getElementById("this").innerHTML = document.getElementById("this").innerHTML + " All the leap years: " + String(s);
