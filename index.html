@@ -79,7 +79,7 @@
 
 		save = paragraph.innerHTML;
 		const tmp =(s / NUM).toFixed(6).toString();
-		paragraph.innerHTML = save + `<br>Leap year ratio: <em>${s} / ${NUM} &asymp;&nbsp; ${tmp}.<\em>`;
+		paragraph.innerHTML = save + `<br>Leap year ratio: <em>${s} / ${NUM} &asymp; ${tmp}.<\em>`;
 
 		let cnt = 0;
 		let d = document.getElementById("roboto");
@@ -92,10 +92,10 @@
 				d.innerHTML = save + `<em>${cnt.toString()}</em>`;
 
 				if (cnt % 2 == 0) {
-					d.style.color = `hsla(120, 20%, 15%, 0.75)`;
+					d.style.color = `hsla(120, 25%, 15%, 0.75)`;
 					d.style.opacity = 0.95;
 				} else {
-					d.style.color = `hsla(0, 90%, 20%, 0.95)`;
+					d.style.color = `hsla(0, 95%, 20%, 0.95)`;
 					d.style.opacity = 0.75;
 				}
 			}, 3000);
