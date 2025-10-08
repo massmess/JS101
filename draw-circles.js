@@ -1,4 +1,5 @@
 function drawIt() {
+document.getElementById("knock").disabled = true;
 	const canvas = document.getElementById("myCanvas");
 	const ctx = canvas.getContext("2d");
 	const img = document.getElementById("lampTiny");//"./高樓的風(small).jpg";
@@ -47,7 +48,10 @@ function drawIt() {
 			ctx.arc(x, y - 1, 8, 0, 2 * Math.PI);
 			ctx.strokeStyle = "crimson";
 			ctx.stroke();
-			if (circles.length == 20) clearInterval(interval);
+			if (circles.length == 20) {
+				clearInterval(interval);
+				document.getElementById("knock").disabled = true;
+			}
 		}
 
 	}, 100);
