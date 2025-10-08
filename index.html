@@ -97,12 +97,12 @@
 		document.getElementById("two").innerHTML = tmp;
 		let cnt = 0;
 		let d = document.getElementById("roboto");
-		d.innerHTML += "<em>I am good.</em><br>";
+		save = d.innerHTML + "<em>I am good.</em><br>";
 		///*(*/() => {
 			let qwerty = window.setInterval(() => {
 				++cnt;
 				if (cnt == 53) window.clearInterval(qwerty);
-				d.innerHTML += `(${cnt.toString()})`;
+				d.innerHTML = save + `(${cnt.toString()})`;
 
 				if (cnt % 2 == 0) {
 					d.style.color = "violet";
