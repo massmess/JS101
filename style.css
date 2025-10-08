@@ -16,7 +16,7 @@ XHTML 1.1
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "//www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 */
 
-@import url("https://fonts.googleapis.com/css2?family=xxxRoboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
 	/* white-space: nowrap; Prevent text wrapping */
@@ -35,28 +35,6 @@ body {
 	margin: 8px;
 	border-radius: 2px;
 }
-
-		.S1{
-			font-size: 4em;
-		}
-
-		.S2{
-			font-size: 4rem;
-		}
-
-		#shoosh {
-			padding: 2rem;
-			font-size: 4rem;
-			text-shadow: 2px 2px 5px #e5e5e5;
-			color: #050505;
-			text-align: center;
-			background-color: mediumaquamarine;
-		}
-	
-		#BW {
-			color: white;
-			background-color: black;
-		}
 
 #roboto {
 	color: white;
