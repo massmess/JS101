@@ -58,11 +58,11 @@ body {
 	
 		#roboto {
 			color: white;
-			<!---background-image: url("高樓的風.jpg");--->
+			background-image: url("高樓的風.jpg");
 			width: max-content;
 			text-align: left;
-			font-family: 新細明體, Roboto;
-			font-size: 2.75rem;
+			font-family: Roboto;
+			font-size: 1.5rem;
 		}
 	
 		#serif {
