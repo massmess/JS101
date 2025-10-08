@@ -59,6 +59,7 @@ body {
 		#roboto {
 			color: white;
 			background-image: url("高樓的風.jpg");
+			opacity: 0.5;
 			width: max-content;
 			text-align: left;
 			font-family: Roboto;
