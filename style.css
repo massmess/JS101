@@ -21,10 +21,9 @@ XHTML 1.1
 body {
 	/* white-space: nowrap; Prevent text wrapping */
 	column-count: 3;
-	column-width: 200px;
+	column-width: auto;
 	column-gap: 8px;
 	column-rule: 2px dotted rgb(79, 185, 227);
-	align-items: baseline;
 }
 
 .rounded-image {
