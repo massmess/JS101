@@ -44,7 +44,7 @@
 
 	<script>
 		const paragraph = document.getElementById("myWords");
-		const save = paragraph.innerHTML;
+		let save = paragraph.innerHTML;
 		paragraph.innerHTML = save + `Big deal: <em>${document.compatMode}<\em>`;
 		// initial drawing
 		//console.log(`After drawIt(): ${drawIt()}`);
