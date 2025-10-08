@@ -87,7 +87,7 @@ a:hover {
 	margin: 8px;
 	display: flex;
 	align-items: stretch;
-	border-radius: 2px;
+	border-radius: 4px;
 }
 
 .wrap-flex > * {
