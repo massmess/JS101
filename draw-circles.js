@@ -50,7 +50,7 @@ document.getElementById("knock").disabled = true;
 			ctx.stroke();
 			if (circles.length == 20) {
 				clearInterval(interval);
-				document.getElementById("knock").disabled = true;
+				document.getElementById("knock").disabled = false;
 			}
 		}
 
