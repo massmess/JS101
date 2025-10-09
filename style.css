@@ -36,14 +36,14 @@ body {
 }
 
 #twinkle {
+	font-family: "Palatino Linotype";
+	font-size: 1.25rem;
 	color: gold;
 	background-image: url("./bliss.jpg");
 	opacity: 0.5;
-	height: auto;/*10rem;*/
+	height: auto;
 	text-align: center;
 	text-baseline: middle;
-	font-family: "Palatino Linotype";
-	font-size: 1.25rem;
 }
 
 a:hover {
@@ -53,27 +53,27 @@ a:hover {
 }
 
 #myWords {
+	font-family: Cosolas;
+	font-size: 12px;
 	padding: 4px;
 	margin: 8px;
 	color: white;
 	background-color: dimgray;
-	font-family: Cosolas;
-	font-size: 12px;
 	border-radius: 2px;
 }
 
 #myRef > * {
 	font-family: "Century Gothic";
-	font-size: 1em;
+	font-size: 1rem;
 	text-align: left;
 }
 
 .wrap-flex {
+	align-items: stretch;
+	display: flex;
 	width: auto;
 	height: auto;
 	margin: 20px;
-	display: flex;
-	align-items: stretch;
 }
 
 .wrap-flex > * {
