@@ -39,7 +39,7 @@
 	<img style="opacity: 0.8" class="rounded-image" src="./高樓的風(tiny).jpg" id="lumpTiny" width="100" height="auto">
 	<canvas id="myCanvas" width="400" height="400" style="display: inline-block; background-color: pink; border: 1px solid #d3d3d3; border-radius: 3px;">
 	Your browser does not support the HTML canvas tag.</canvas>
-	<input type="button" value="Click Me" onclick="drawIt()">
+	<input type="button" id="func" value="Click Me" onclick="drawIt()">
 
 	<p><div id="myRef">
 		<h3>AVAILABLE OPTIONS</h3>
@@ -61,7 +61,7 @@
 		<div>Fourth Division</div>
 	</div>
 
-	<p id="this">Here we go!</p>
+	<p id="result">Here we go!</p>
 	
 	<script>
 		// compute how many years are leap years
@@ -71,12 +71,12 @@
 		for (let i = 0; i < n; i++)
 			s += leap(Math.floor(Math.random() * n) + 1);
 
-		const p = document.getElementById("this");
+		const p = document.getElementById("result");
 		let save = p.innerHTML;
 
 		p.innerHTML = save + `<br>Big deal: <em>${document.compatMode}<\em>`;
 
-		// initial drawing
+		// start with an initial drawing
 		drawIt();
 
 		// get the ratio and show it
