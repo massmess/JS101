@@ -33,13 +33,13 @@ body {
 }
 
 #twinkle {
+	text-align: center;
+	height: auto;
 	font-family: Roboto;
 	font-size: 1.25rem;
 	color: gold;
 	background-image: url("./bliss.jpg");
 	opacity: 0.5;
-	height: auto;
-	text-align: center;
 }
 
 a:hover {
