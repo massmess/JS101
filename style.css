@@ -63,7 +63,7 @@ body {
 
 a:hover {
 	color: hsl(0, 100%, 40%);
-	background-color: powderblue;
+	background-color: hsl(187, 52%, 80%);  // powerblue
 	opacity: 0.95;
 }
 
