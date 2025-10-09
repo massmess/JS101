@@ -50,7 +50,7 @@ function drawIt() {
 			ctx.strokeStyle = "crimson";
 			ctx.stroke();
 			if (circles.length == 20) {
-				document.getElementById("knock").disabled = false;
+				document.getElementById("func").disabled = false;
 				clearInterval(interval);
 			}
 		}
