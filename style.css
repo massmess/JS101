@@ -43,7 +43,7 @@ body {
 	height: 10rem;
 	text-align: center;
 	text-baseline: middle;
-	font-family: "Courier New", "Palatino Linotype";
+	font-family: "Palatino Linotype", "Courier New";
 	font-size: 1.25rem;
 }
 
@@ -78,7 +78,7 @@ a:hover {
 }
 
 #myRef {
-	font-family: "Courier New", "Century Gothic";
+	font-family: "Century Gothic", "Courier New";
 	font-size: 1em;
 	text-align: left;
 }
