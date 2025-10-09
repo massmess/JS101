@@ -39,7 +39,7 @@ body {
 	color: gold;
 	background-image: url("./bliss.jpg");
 	opacity: 0.5;
-	height: 10rem;
+	height: auto;/*10rem;*/
 	text-align: center;
 	text-baseline: middle;
 	font-family: "Palatino Linotype";
