@@ -20,7 +20,7 @@ XHTML 1.1
 
 body {
 	font-family: Cambria;
-	/*white-space: nowrap; Prevent text wrapping*/
+	white-space: nowrap;  /* prevent text wrapping */
 	column-count: 3;
 	column-width: auto;
 	column-gap: 8px;
@@ -28,9 +28,9 @@ body {
 }
 
 .rounded-image {
-	/*display: block;
+	display: block;
 	margin-left: auto;
-	margin-right: auto;*/
+	margin-right: auto;
 	flex-direction: column;
 	margin: 8px;
 	border-radius: 2px;
@@ -47,23 +47,9 @@ body {
 	font-size: 1.25rem;
 }
 
-.display {
-	width: fit-content;
-	height: auto;
-	<!---text-align: center;--->
-	display: inline-block;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	color: white;
-	background-color: dimgray;
-	border: 1px dashed red;
-	border-radius: 4px;
-	padding: 4px;
-}
-
 a:hover {
 	color: hsl(0, 100%, 40%);
-	background-color: hsl(187, 52%, 80%);  // powderblue
+	background-color: hsl(187, 52%, 80%);  /* powderblue */
 	opacity: 0.95;
 }
 
