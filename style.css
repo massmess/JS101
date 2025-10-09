@@ -50,10 +50,9 @@ a:hover {
 
 #myInfo {
 	font-size: 0.75rem;
-	padding: 14px;
+	padding: 8px;
 	color: white;
 	background-color: dimgray;
-	border: 1px solid red;
 	border-radius: 2px;
 }
 
