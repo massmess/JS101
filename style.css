@@ -20,7 +20,7 @@ XHTML 1.1
 
 body {
 	font-family: Cambria;
-	/* white-space: nowrap;  // prevent text wrapping */
+	white-space: nowrap;  /* prevent text wrapping */
 	column-count: 3;
 	column-width: auto;
 	column-gap: 8px;
