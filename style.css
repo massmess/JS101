@@ -53,6 +53,7 @@ a:hover {
 	padding: 14px;
 	color: white;
 	background-color: dimgray;
+	border: 1px solid red;
 	border-radius: 2px;
 }
 
