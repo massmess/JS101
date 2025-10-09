@@ -19,7 +19,7 @@ XHTML 1.1
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-	font-family: Roboto, serif;
+	font-family: serif;
 	/*white-space: nowrap; Prevent text wrapping*/
 	column-count: 3;
 	column-width: auto;
@@ -43,8 +43,8 @@ body {
 	height: 10rem;
 	text-align: center;
 	text-baseline: middle;
-	font-family: "Courier New";
-	font-size: 0.75rem;
+	font-family: "Arial Bold";
+	font-size: 1.25rem;
 }
 
 .display {
