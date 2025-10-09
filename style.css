@@ -33,7 +33,7 @@ body {
 }
 
 #twinkle {
-	font-family: "Arial Narrow";
+	font-family: Roboto;
 	font-size: 1.25rem;
 	color: gold;
 	background-image: url("./bliss.jpg");
@@ -58,7 +58,7 @@ a:hover {
 }
 
 #myRef > * {
-	font-family: "Century Gothic";
+	font-family: sans-serif;
 	font-size: 1rem;
 	text-align: left;
 }
