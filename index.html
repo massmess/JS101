@@ -68,7 +68,7 @@
 		const n = 3000000;  // from 1 to 3000000
 		let s = 0;
 		for (let i = 0; i < n; i++)
-			s += leap((Math.floor(Math.random() * n)) + 1);
+			s += leap(Math.floor(Math.random() * n) + 1);
 
 		const p = document.getElementById("this");
 		let save = p.innerHTML;
@@ -78,8 +78,8 @@
 		drawIt();
 
 		save = paragraph.innerHTML;
-		const t =(s / NUM).toFixed(4).toString();
-		p.innerHTML = save + `<br>Leap year ratio: <em>${s} / ${NUM} &asymp; ${t}.<\em>`;
+		const t = (s / NUM).toFixed(4).toString();
+		p.innerHTML = save + `<br>Leap year ratio: <em>${s} / 3000000 &asymp; ${t}.<\em>`;
 
 		let count = 0;
 		const d = document.getElementById("twinkle");
