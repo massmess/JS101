@@ -64,34 +64,33 @@
 	<p id="this">Here we go!</p>
 	
 	<script>
-		const NUM = 3000000;
+		// compute how many years are leap years
+		const n = 3000000;  // from 1 to 3000000
 		let s = 0;
-		for (let i = 0; i < NUM; i++){
-			let n = (Math.floor(Math.random() * NUM)) + 1;
-			s += leap(n);
-		}
+		for (let i = 0; i < n; i++)
+			s += leap((Math.floor(Math.random() * n)) + 1;);
 
-		const paragraph = document.getElementById("this");
-		let save = paragraph.innerHTML;
-		paragraph.innerHTML = save + `<br>Big deal: <em>${document.compatMode}<\em>`;
+		const p = document.getElementById("this");
+		let save = p.innerHTML;
+		p.innerHTML = save + `<br>Big deal: <em>${document.compatMode}<\em>`;
 		// initial drawing
 		drawIt();
 
 		save = paragraph.innerHTML;
-		const tmp =(s / NUM).toFixed(4).toString();
-		paragraph.innerHTML = save + `<br>Leap year ratio: <em>${s} / ${NUM} &asymp; ${tmp}.<\em>`;
+		const t =(s / NUM).toFixed(4).toString();
+		p.innerHTML = save + `<br>Leap year ratio: <em>${s} / ${NUM} &asymp; ${t}.<\em>`;
 
-		let cnt = 0;
-		let d = document.getElementById("twinkle");
+		let count = 0;
+		const d = document.getElementById("twinkle");
 		save = d.innerHTML + "<br><em>I am good, very good indeed.</em><br>";
 	
 		(() => {
 			let qwerty = window.setInterval(() => {
-				++cnt;
-				if (cnt == 73) window.clearInterval(qwerty);
-				d.innerHTML = save + `<em>${cnt.toString()}</em>`;
+				count += 1;
+				if (count == 73) window.clearInterval(qwerty);
+				d.innerHTML = save + `<em>${count.toString()}</em>`;
 
-				if (cnt % 2 == 0) {
+				if (count % 2 == 0) {
 					d.style.color = `hsla(120, 25%, 15%, 0.75)`;
 					d.style.opacity = 0.95;
 				} else {
