@@ -65,6 +65,7 @@
 	
 	<script>
 		// compute how many years are leap years
+
 		const n = 3000000;  // from 1 to 3000000
 		let s = 0;
 		for (let i = 0; i < n; i++)
@@ -72,6 +73,7 @@
 
 		const p = document.getElementById("this");
 		let save = p.innerHTML;
+
 		p.innerHTML = save + `<br>Big deal: <em>${document.compatMode}<\em>`;
 
 		// initial drawing
@@ -88,7 +90,10 @@
 		(() => {
 			let qwerty = window.setInterval(() => {
 				count += 1;
-				if (count == 73) window.clearInterval(qwerty);
+
+				if (count == 73)
+					window.clearInterval(qwerty);
+
 				d.innerHTML = save + `<em>${count.toString()}</em>`;
 
 				if (count % 2 == 0) {
