@@ -2,7 +2,7 @@ function drawIt() {
 document.getElementById("knock").disabled = true;
 	const canvas = document.getElementById("myCanvas");
 	const ctx = canvas.getContext("2d");
-	const img = document.getElementById("lumpTiny");//"./高樓的風(small).jpg";
+	const img = document.getElementById("lumpTiny");
 	const pattern = ctx.createPattern(img, "repeat");
 
 	const min = 20;
