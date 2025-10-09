@@ -73,7 +73,7 @@ a:hover {
 	display: flex;
 	width: auto;
 	height: auto;
-	margin: 40px;
+	margin: 10px;
 }
 
 .wrap-flex > * {
