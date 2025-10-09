@@ -48,9 +48,7 @@ a:hover {
 	opacity: 0.95;
 }
 
-#myWords {
-	font-family: serif;
-	font-size: 12px;
+#myInfo {
 	padding: 4px;
 	color: white;
 	background-color: dimgray;
