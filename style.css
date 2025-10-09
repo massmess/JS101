@@ -78,9 +78,10 @@ a:hover {
 }
 
 #myRef {
-	font-family: "Century Gothic";
+	font-family: Roboto, "Century Gothic";
 	font-size: 1em;
 	text-align: left;
+	padding: 2px;
 }
 
 .wrap-flex {
