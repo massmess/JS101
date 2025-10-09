@@ -69,15 +69,15 @@ a:hover {
 }
 
 .wrap-flex {
+	width: auto;
+	height: auto;
 	margin: 8px;
 	display: flex;
 	align-items: stretch;
 }
 
 .wrap-flex > * {
-	width: auto;
-	padding: 6px;
-	margin: 2px;
+	margin: 12px;
 	border: 1px solid hsl(60, 20%, 80%);
 	border-radius: 2px;
 }
