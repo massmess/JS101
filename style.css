@@ -71,13 +71,13 @@ a:hover {
 .wrap-flex {
 	width: auto;
 	height: auto;
-	margin: 12px;
+	margin: 20px;
 	display: flex;
 	align-items: stretch;
 }
 
 .wrap-flex > * {
-	margin: 2px;
+	margin: 4px;
 	border: 1px solid hsl(60, 20%, 80%);
 	border-radius: 2px;
 }
