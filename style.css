@@ -37,7 +37,7 @@ body {
 }
 
 #twinkle {
-	color: whitesmoke;
+	color: gold;
 	background-image: url("./bliss.jpg");
 	opacity: 0.5;
 	height: 10rem;
@@ -63,7 +63,7 @@ body {
 
 a:hover {
 	color: hsl(0, 100%, 40%);
-	background-color: hsl(187, 52%, 80%);  // powerblue
+	background-color: hsl(187, 52%, 80%);  // powderblue
 	opacity: 0.95;
 }
 
