@@ -51,7 +51,7 @@
 
 		<div id="one">
 			<label for="num"><span style="background-color: #e8e3da">請在左側的空格裡鍵入你的數字</span></label><br>
-			<input type="text" id="num" name="num" placeholder="(whole number)" size="6" accesskey="N" value="20">
+			<input type="text" id="num" name="num" placeholder="(whole number)" size="5" accesskey="N" value="20">
 			<input type="button" id="fact" name="fact" accesskey="B" value="Factorial-ize Me!">
 			<textarea id="txt" name="txt" placeholder="(never seen)" readonly>Here I am.</textarea>
 		</div>
@@ -76,7 +76,7 @@
 				num.value = String(n);
 
 				if (!(0 <= n && n <= 500)) {
-					txt.value = "The number is greater than 500, or it is less than 0.";
+					txt.value = "The number is either greater than 500 or it is less than 0.";
 					return false;
 				}
 
