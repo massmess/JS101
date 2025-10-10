@@ -1,158 +1,158 @@
-<!doctype html><html lang="zh-tw">
-	<head>
-		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>閏年判別</title>
+<!doctype html><html lang="zh-hant-tw">
 
-		<script type="text/javascript">
-			function isleap(year) {
-				let y = true;
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>閏年判別</title>
 
-				if (year % 4 != 0) {
-					y = false;
+	<script type="text/javascript">
+		function isleap(year) {
+			let y = true;
+
+			if (year % 4 != 0) {
+				y = false;
+			} else {
+				if (year % 100 != 0) {
+					;
 				} else {
-					if (year % 100 != 0) {
+					if (year % 400 != 0) {
+						y = false;
+					} else {
 						;
-					} else {
-						if (year % 400 != 0) {
-							y = false;
-						} else {
-							;
-						}
 					}
 				}
-
-				return y;
-			}
-		</script>
-
-		<style>
-			#page {
-				width: max-content;
-				margin: auto;
-				font-size: 1rem;
-				line-height: 1.5rem;
-				color: white;
-				background-color: teal;
-				border-radius: 5px;
-				padding: 20px;
 			}
 
-			#neat {
-				width: max-content;
-				margin: inherit;
-				font-family: "Source Code Pro", "Overpass Mono", monospace;
-				font-size: 1.25rem;
-				line-height: 1.25rem;
-				padding: 1px 5px 8px;
+			return y;
+		}
+	</script>
+
+	<style>
+		#page {
+			width: max-content;
+			margin: auto;
+			font-size: 1rem;
+			line-height: 1.5rem;
+			color: white;
+			background-color: teal;
+			border-radius: 5px;
+			padding: 20px;
+		}
+
+		#neat {
+			width: max-content;
+			margin: inherit;
+			font-family: "Source Code Pro", "Overpass Mono", monospace;
+			font-size: 1.25rem;
+			line-height: 1.25rem;
+			padding: 1px 5px 8px;
+		}
+
+		#lbl {
+			font-family: 新細明體, "Times New Roman", Times, serif;
+			font-size: 1rem;
+			color: #202020;
+			background-color: lightblue;
+			border-radius: 4px;
+			padding: 0.5rem;
+		}
+
+		#yes {
+			width: 85%;
+			font-family: Arial, sans-serif;
+			font-size: 1.25rem;
+			color: dimgray;
+		}
+
+		#one {
+			display: block;
+			width: 25rem;
+			margin: inherit;
+			white-space: nowrap;
+			line-height: 2.25rem;
+			background-color: khaki;
+			border-radius: 5px;
+			padding: 1.25rem;
+		}
+
+		#leap {
+			font-family: "Gill Sans", sans-serif;
+			font-size: 12px;
+			color: rgb(40, 20, 40);
+			background-color: rgb(220, 240, 220);
+			border-radius: 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="page">
+		<h3>閏年判別</h3>
+
+		A year represented as a number is a leap year if<br>
+		&emsp;&emsp;(1) it is divisible by 400;<br>
+		&emsp;&emsp;(2) otherwise, it is divisible by 4 but not by 100.<br>
+		Here we have a piece of JavaScript code that determines whether a given year<br>
+		is a leap year. Please take note that there are three layers of comparison in the<br>
+		function.
+
+		<div id="neat">
+			function isleap(year) {<br>
+			<span style="padding-left: 3rem">let y = true;</span><br><br>
+			<span style="padding-left: 3rem">if (year % 4 != 0) {</span><br>
+			<span style="padding-left: 6rem">y = false;<br>
+			<span style="padding-left: 3rem">} else {</span><br>
+			<span style="padding-left: 6rem">if (year % 100 != 0) {</span><br>
+			<span style="padding-left: 9rem">;</span><br>
+			<span style="padding-left: 6rem">} else {</span><br>
+			<span style="padding-left: 9rem">if (year % 400 != 0) {</span><br>
+			<span style="padding-left: 12rem">y = false;</span><br>
+			<span style="padding-left: 9rem">} else {</span><br>
+			<span style="padding-left: 12rem">;</span><br>
+			<span style="padding-left: 9rem">}</span><br>
+			<span style="padding-left: 6rem">}</span><br>
+			<span style="padding-left: 3rem">}</span><br><br>
+			<span style="padding-left: 3rem">return y;</span><br>
 			}
-
-			#lbl {
-				font-family: 新細明體, "Times New Roman", Times, serif;
-				font-size: 1rem;
-				color: #202020;
-				background-color: lightblue;
-				border-radius: 4px;
-				padding: 0.5rem;
-			}
-
-			#yes {
-				width: 85%;
-				font-family: Arial, sans-serif;
-				font-size: 1.25rem;
-				color: dimgray;
-			}
-
-			#one {
-				display: block;
-				width: 25rem;
-				margin: inherit;
-				white-space: nowrap;
-				line-height: 2.25rem;
-				background-color: khaki;
-				border-radius: 5px;
-				padding: 1.25rem;
-			}
-
-			#leap {
-				font-family: "Gill Sans", sans-serif;
-				font-size: 12px;
-				color: rgb(40, 20, 40);
-				background-color: rgb(220, 240, 220);
-				border-radius: 3px;
-			}
-		</style>
-	</head>
-
-	<body>
-		<div id="page">
-			<h3>閏年判別</h3>
-
-			A year represented as a number is a leap year if<br>
-			&emsp;&emsp;(1) it is divisible by 400;<br>
-			&emsp;&emsp;(2) otherwise, it is divisible by 4 but not by 100.<br>
-			Here we have a piece of JavaScript code that determines whether a given year<br>
-			is a leap year. Please take note that there are three layers of comparison in the<br>
-			function.
-
-			<div id="neat">
-				function isleap(year) {<br>
-				<span style="padding-left: 3rem">let y = true;</span><br><br>
-				<span style="padding-left: 3rem">if (year % 4 != 0) {</span><br>
-				<span style="padding-left: 6rem">y = false;<br>
-				<span style="padding-left: 3rem">} else {</span><br>
-				<span style="padding-left: 6rem">if (year % 100 != 0) {</span><br>
-				<span style="padding-left: 9rem">;</span><br>
-				<span style="padding-left: 6rem">} else {</span><br>
-				<span style="padding-left: 9rem">if (year % 400 != 0) {</span><br>
-				<span style="padding-left: 12rem">y = false;</span><br>
-				<span style="padding-left: 9rem">} else {</span><br>
-				<span style="padding-left: 12rem">;</span><br>
-				<span style="padding-left: 9rem">}</span><br>
-				<span style="padding-left: 6rem">}</span><br>
-				<span style="padding-left: 3rem">}</span><br><br>
-				<span style="padding-left: 3rem">return y;</span><br>
-				}
-			</div>
-
-			<div id="one">
-				<label for="num" id="lbl">Please type a year: <input type="text" id="num" size="7" placeholder="(number)" value="2024" accesskey="N"></label>
-				<input type="button" id="leap" accesskey="B" value="LEAP YEAR CHECKER"><br>
-				<input type="text" id="yes" placeholder="（閏年判別）" readonly>
-			</div>
-
-			<script type="text/javascript">
-				// elements used
-				const num = document.getElementById("num");
-				const leap = document.getElementById("leap");
-				const yes = document.getElementById("yes");
-
-				num.onkeyup = () => {
-					leap.disabled = false;
-					yes.value = "";  // display area cleared
-				};
-
-				leap.onclick = () => {
-					const year = parseInt(num.value);
-
-					// one click for a given number
-					leap.disabled = true;
-
-					if (Number.isNaN(year)) {
-						yes.value = "The input is not a number.";
-					} else {
-						num.value = String(year);  // possible adjustment to the input
-						if (!(1 <= year && year <= 300000)) {
-							yes.value = "The year should be in [1, 300000].";
-						} else {
-							if (isleap(year)) {
-								yes.value = `The year ${year} is a leap year.`;
-							} else {
-								yes.value = `The year ${year} is NOT a leap year.`;
-							}
-						}
-					}
-				};
-			</script>
 		</div>
-	</body>
-</html>
+
+		<div id="one">
+			<label for="num" id="lbl">Please type a year: <input type="text" id="num" size="7" placeholder="(number)" value="2024" accesskey="N"></label>
+			<input type="button" id="leap" accesskey="B" value="LEAP YEAR CHECKER"><br>
+			<input type="text" id="yes" placeholder="（閏年判別）" readonly>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		// elements used
+		const num = document.getElementById("num");
+		const leap = document.getElementById("leap");
+		const yes = document.getElementById("yes");
+
+		num.onkeyup = () => {
+			leap.disabled = false;
+			yes.value = "";  // display area cleared
+		};
+
+		leap.onclick = () => {
+			const year = parseInt(num.value);
+
+			// one click for a given number
+			leap.disabled = true;
+
+			if (Number.isNaN(year)) {
+				yes.value = "The input is not a number.";
+			} else {
+				num.value = String(year);  // possible adjustment to the input
+				if (!(1 <= year && year <= 300000)) {
+					yes.value = "The year should be in [1, 300000].";
+				} else {
+					if (isleap(year)) {
+						yes.value = `The year ${year} is a leap year.`;
+					} else {
+						yes.value = `The year ${year} is NOT a leap year.`;
+					}
+				}
+			}
+		};
+	</script>
+</body></html>
