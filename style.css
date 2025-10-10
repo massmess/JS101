@@ -45,6 +45,7 @@ body {
 .S2 {
 	display: inline-block;
 	vertical-align: bottom;
+	text-align: right;
 	background-color: hsl(200, 50%, 90%);
 	padding: 4px;
 	border: 1px solid hsl(0, 59%, 41%);
