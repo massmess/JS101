@@ -46,7 +46,6 @@ body {
 .S2 {
 	display: inline-block;
 	vertical-align: bottom;
-	font-size: 0.75rem;
 	text-align: right;
 	background-color: hsl(200, 50%, 90%);
 	padding: 4px;
