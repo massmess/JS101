@@ -29,7 +29,7 @@ body {
 .rounded-image {
 	display: inline-block;
 	flex-direction: column;
-	vertical-align: text-top;
+	vertical-align: text-bottom;
 	border-radius: 2px;
 }
 
