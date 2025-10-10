@@ -38,6 +38,7 @@ body {
 	vertical-align: top;
 	text-align: left;
 	background-color: hsl(200, 50%, 90%);
+	margin: 2px;
 	padding: 4px;
 	border: 1px solid hsl(0, 59%, 41%);  /* brown */
 	border-radius: 2px;
@@ -49,6 +50,7 @@ body {
 	font-size: 0.75rem;
 	text-align: right;
 	background-color: hsl(200, 50%, 90%);
+	margin: 2px;
 	padding: 4px;
 	border: 1px solid hsl(0, 59%, 41%);  /* brown */
 	border-radius: 2px;
