@@ -30,6 +30,7 @@ body {
 	display: inline-block;
 	flex-direction: column;
 	vertical-align: top;
+	margin: 4px;
 	border-radius: 2px;
 }
 
