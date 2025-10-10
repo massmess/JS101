@@ -34,6 +34,15 @@ body {
 }
 
 .S1 {
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid yellow;
+	border-radius: 2px;
+}
+
+.S2 {
+	display: inline-block;
+	vertical-align: bottom;
 	border: 1px solid yellow;
 	border-radius: 2px;
 }
