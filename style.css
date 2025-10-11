@@ -59,8 +59,11 @@ body {
 	font-family: Roboto;
 	font-size: 1.25rem;
 	color: gold;
-	background-image: url("./bliss.jpg");
-	opacity: 0.5;
+	background-image: url("./bliss.jpg"); /* Replace with your image URL */
+	background-color: rgb(255, 255, 255, 0.7); /* Semi-transparent white overlay */
+	background-blend-mode: overlay; /* Blend the color and image */
+	background-size: cover; /* Ensure the image covers the entire container */
+	background-position: center; /* Center the image */
 }
 
 a:hover {
