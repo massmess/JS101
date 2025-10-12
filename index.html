@@ -106,11 +106,11 @@
 
 				d.innerHTML = save + `<em>${count.toString()}</em>`;
 
-				if (count % 2 == 0) {
-					d.style.color = `hsla(240, 95%, 25%, 0.8)`;
+				if (count % 2 == 1) {
+					d.style.color = `hsla(240, 95%, 25%, 1.0)`;
 					//d.style.opacity = 0.95;
 				} else {
-					d.style.color = `hsla(0, 95%, 25%, 1.0)`;
+					d.style.color = `hsla(0, 95%, 25%, 0.8)`;
 					//d.style.opacity = 0.75;
 				}
 			}, 3000);
