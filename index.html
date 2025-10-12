@@ -104,7 +104,10 @@
 
 				if (count == 3) {
 					window.clearInterval(qwerty);
-
+					setTimeout(() = > {
+						d.style.color = saveColor;
+						d.innerHTML = save;
+					}, 3000);
 				}
 
 				d.innerHTML = tmp + `<em>${count.toString()}</em>`;
@@ -118,9 +121,6 @@
 				}
 			}, 3000);
 		})();
-
-		d.style.color = saveColor;
-		d.innerHTML = save;
 
 	</script>
 
