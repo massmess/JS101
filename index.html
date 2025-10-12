@@ -95,8 +95,8 @@
 		const d = document.getElementById("twinkle");
 		save = d.innerHTML;
 		saveColor = d.style.color;
-		save = save.slice(0, save.length - "<br>(Be<br>There)".length);
-		save = save + "<br><em>I am good, very good indeed.</em><br>";
+		tmp = save.slice(0, save.length - "<br>(Be<br>There)".length);
+		tmp = tmp + "<br><em>I am good, very good indeed.</em><br>";
 
 		(() => {
 			let qwerty = window.setInterval(() => {
@@ -109,7 +109,7 @@
 
 				}
 
-				d.innerHTML = save + `<em>${count.toString()}</em>`;
+				d.innerHTML = tmp + `<em>${count.toString()}</em>`;
 
 				if (count % 2 == 1) {
 					d.style.color = `hsla(240, 95%, 25%, 1.0)`;
