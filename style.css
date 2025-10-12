@@ -58,7 +58,7 @@ body {
 	height: auto;
 	font-family: Roboto;
 	font-size: 1.25rem;
-	color: yellow;/*gold;*/
+	color: gold;
 	background-image: url("./bliss.jpg");
 	background-color: rgb(255, 255, 255, 0.3); /* Overly transparent white overlay */
 	background-blend-mode: overlay; /* Blend the color and image */
