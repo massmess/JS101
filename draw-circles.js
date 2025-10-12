@@ -1,4 +1,4 @@
-function drawIt() {
+function drawCircles() {
 	document.getElementById("func").disabled = true;
 
 	const canvas = document.getElementById("myCanvas");
