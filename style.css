@@ -60,7 +60,7 @@ body {
 	font-size: 1.25rem;
 	color: yellow;/*gold;*/
 	background-image: url("./bliss.jpg"); /* Replace with your image URL */
-	background-color: rgb(255, 255, 255, 0.7); /* More-transparent white overlay */
+	background-color: rgb(255, 255, 255, 0.3); /* More-transparent white overlay */
 	background-blend-mode: overlay; /* Blend the color and image */
 	background-size: cover; /* Ensure the image covers the entire container */
 	background-position: center; /* Center the image */
