@@ -3,7 +3,7 @@ function twinkle() {
 	const d = document.getElementById("twinkle");
 	save = d.innerHTML;
 	saveColor = d.style.color;
-	tmp = save.slice(0, save.length - "<br>(Be<br>&#9675;&#9675;&#9675;<br>There)".length+5);
+	tmp = save.slice(0, save.length - "<br>(Be<br>&#9885;&#9885;&#9885;<br>There)".length+5);
 	tmp = tmp + "<br><em>I am good, very good indeed.</em><br>";
 
 	(() => {
