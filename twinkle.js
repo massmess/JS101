@@ -1,4 +1,4 @@
-function twinkleIt() {
+function twinkle() {
   let count = 0;
   const d = document.getElementById("twinkle");
   save = d.innerHTML;
