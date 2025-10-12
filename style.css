@@ -60,15 +60,15 @@ body {
 	font-size: 1.25rem;
 	color: gold;
 	background-image: url("./bliss.jpg");
-	background-color: rgb(255, 255, 255, 0.3); /* Overly transparent white overlay */
-	background-blend-mode: overlay; /* Blend the color and image */
-	background-size: cover; /* Ensure the image covers the entire container */
-	background-position: center; /* Center the image */
+	background-color: rgb(255, 255, 255, 0.3);  // overly transparent white overlay
+	background-blend-mode: overlay;  // blend the color and the image
+	background-size: cover;  // ensure the image covers the entire container
+	background-position: center;  // center the image
 }
 
 a:hover {
 	color: hsl(0, 100%, 40%);
-	background-color: hsl(187, 52%, 80%);  /* powderblue */
+	background-color: hsl(187, 52%, 80%);  // powderblue
 	opacity: 0.95;
 }
 
