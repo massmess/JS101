@@ -1,6 +1,5 @@
-function twinkle() {
+function twinkle(d) {
 	let count = 0;
-	const d = document.getElementById("twinkle");
 	save = d.innerHTML;
 	saveColor = d.style.color;
 	tmp = save.slice(0, save.length - "<br>(Be<br>There)".length);
