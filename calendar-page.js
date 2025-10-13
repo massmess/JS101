@@ -160,7 +160,7 @@ const MONTH_DAYS_31 = [
 	+ " 30  31<br></pre>"
 ];
 
-const PTR_MONTH_DAYS = [
+const PTRS_MONTH_DAYS = [
 	MONTH_DAYS_28, MONTH_DAYS_29, MONTH_DAYS_30, MONTH_DAYS_31
 ];
 
