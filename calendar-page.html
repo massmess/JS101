@@ -1,121 +1,122 @@
-<!doctype html>
-<html lang="zh-hant-tw">
-	<head>
-		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>綱頁設計學習日誌-月曆頁面</title>
-		<!---<script type="text/javascript" src="../css/calendar-page.js"></script>--->
-		<script type="text/javascript" src="./calendar-page.js"></script>
+<!doctype html><html lang="zh-hant-tw">
 
-		<style>
-			body {
-				font-family: Garamond, serif, Calibri;
-				width: auto;
-				/* background-image: url("./images/月曆頁面.jpg"); Replace with your image URL */
-				background-image: url("./images/月曆頁面.jpg"); /* Replace with your image URL */
-				background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white overlay */
-				/*background-color: rgba(0, 0, 0, 0.5);*/ /* Semi-transparent black overlay */
-				background-blend-mode: overlay; /* Blend the color and image */
-				background-size: cover; /* Ensure the image covers the entire container */
-				background-position: cenetr; /* Center the image */
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>綱頁設計學習日誌-月曆頁面</title>
+	<!---<script type="text/javascript" src="../css/calendar-page.js"></script>--->
+	<script type="text/javascript" src="./calendar-page.js"></script>
+
+	<style>
+		body {
+			font-family: Garamond, serif, Calibri;
+			width: auto;
+			/* background-image: url("./images/月曆頁面.jpg"); Replace with your image URL */
+			background-image: url("./images/月曆頁面.jpg"); /* Replace with your image URL */
+			background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white overlay */
+			/*background-color: rgba(0, 0, 0, 0.5);*/ /* Semi-transparent black overlay */
+			background-blend-mode: overlay; /* Blend the color and image */
+			background-size: cover; /* Ensure the image covers the entire container */
+			background-position: cenetr; /* Center the image */
+		}
+
+		div {
+			display: inline-block;
+			background-color: orange;
+			padding: 0.6rem;
+			border-radius: 5%;
+			margin: 0.2rem;
+		}
+
+		.outline-text {
+			font-size: 48px;
+			font-weight: bold;
+			color: white; /* Inner color */
+			-webkit-text-stroke: 2px black; /* Outline color and width */
+			border-radius: 5px / 60px;
+			opacity: 0.75;
+		}
+
+		#year, #month {
+			width: 6rem;
+			font-family: monospace;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="outline-text">月曆頁面 (Calendar Page for a Given Year and Month)</div>
+
+	<p>
+		<label for="year">YEAR </label>
+		<input type="number" id="year" placeholder="(the year)" accesskey="Y" value="2024" min="1" step="1">
+		<label for="month">MONTH </label>
+		<input type="number" id="month" placeholder="(the month)" accesskey="M" value="1" min="1" max="12" step="1">
+		<button id="page" type="button" onclick="showPage()" accesskey="S">Calendar Page</button>
+	</p>
+	
+	<script type="text/javascript">
+		// initialization
+		let page = document.getElementById("page")
+		let year = document.getElementById("year");
+		let month = document.getElementById("month");
+		let curYear = 2024;
+		let curMonth = 1;
+		let firstTime = true;  // did once
+
+		year.addEventListener("keyup", e => {
+			page.disabled = false;
+			if (e.key == "Enter") showPage();
+		});
+
+		month.addEventListener("keyup", e => {
+			page.disabled = false;
+			if (e.key == "Enter") showPage();
+		});
+
+		function showPage() {
+			let y = Number.parseInt(year.value);
+			let m = Number.parseInt(month.value);
+			let b = true;  // to do or not to do
+
+			// one page for the same year and month
+			page.disabled = true;
+
+			if (Number.isNaN(y)) {
+				window.alert("*** WRONG YEAR ***");
+				year.value = "";  // invalid year number
+				b = false;
+			} else if (!(1 <= y && y <= 300000)) {
+				window.alert("Invalid number for the year: the allowed numbers are between 1 and 300000. (Could there be any merit of going far into the future?)");
+				year.value = "";
+				b = false;
 			}
 
-			div {
-				display: inline-block;
-				background-color: orange;
-				padding: 0.6rem;
-				border-radius: 5%;
-				margin: 0.2rem;
+			if (Number.isNaN(m)) {
+				window.alert("*** WRONG MONTH ***");
+				month.value = "";  // invalid month number
+				b = false;
+			} else if (!(1 <= m && m <= 12)) {
+				window.alert("Invalid number for the month: the number must be between 1 and 12, and 1 is for January, 2 for February, 3 for March, etc.");
+				month.value = "";
+				b = false;
 			}
-			.outline-text {
-      font-size: 48px;
-      font-weight: bold;
-      color: white; /* Inner color */
-      -webkit-text-stroke: 2px black; /* Outline color and width */
-	  border-radius: 5px / 60px;
-	  opacity: 0.75;
-	}
-	#year, #month {
-		width: 6rem;
-		font-family: monospace;
-	}
-		</style>
-	</head>
 
-	<!---<body><p>A</p><p>B</p>--->
-		<div class="outline-text">月曆頁面 (Calendar Page for a Given Year and Month)</div>
+			if (firstTime || (b && !(y == curYear && m == curMonth))) {
+				firstTime = false;
+				// input values adjusted, possibly
+				year.value = y.toString();
+				month.value = m.toString();
 
-		<p>
-			<label for="year">YEAR </label>
-			<input type="number" id="year" placeholder="(the year)" accesskey="Y" value="2024" min="1" step="1">
-			<label for="month">MONTH </label>
-			<input type="number" id="month" placeholder="(the month)" accesskey="M" value="1" min="1" max="12" step="1">
-			<button id="page" type="button" onclick="showPage()" accesskey="S">Calendar Page</button>
-		</p>
-		
-		<script type="text/javascript">
-			// initialization
-			let page = document.getElementById("page")
-			let year = document.getElementById("year");
-			let month = document.getElementById("month");
-			let curYear = 2024;
-			let curMonth = 1;
-			let firstTime = true;  // did once
-
-			year.addEventListener("keyup", e => {
-				page.disabled = false;
-				if (e.key == "Enter") showPage();
-			});
-
-			month.addEventListener("keyup", e => {
-				page.disabled = false;
-				if (e.key == "Enter") showPage();
-			});
-
-			function showPage() {
-				let y = Number.parseInt(year.value);
-				let m = Number.parseInt(month.value);
-				let b = true;  // to do or not to do
-
-				// one page for the same year and month
-				page.disabled = true;
-
-				if (Number.isNaN(y)) {
-					window.alert("*** WRONG YEAR ***");
-					year.value = "";  // invalid year number
-					b = false;
-				} else if (!(1 <= y && y <= 300000)) {
-					window.alert("Invalid number for the year: the allowed numbers are between 1 and 300000. (Could there be any merit of going far into the future?)");
-					year.value = "";
-					b = false;
-				}
-
-				if (Number.isNaN(m)) {
-					window.alert("*** WRONG MONTH ***");
-					month.value = "";  // invalid month number
-					b = false;
-				} else if (!(1 <= m && m <= 12)) {
-					window.alert("Invalid number for the month: the number must be between 1 and 12, and 1 is for January, 2 for February, 3 for March, etc.");
-					month.value = "";
-					b = false;
-				}
-
-				if (firstTime || (b && !(y == curYear && m == curMonth))) {
-					firstTime = false;
-					// input values adjusted, possibly
-					year.value = y.toString();
-					month.value = m.toString();
-
-					let s = seven(y, m);
-					let d = DAYS_IN_MONTH[m] - 28 + (m == 2 ? leap(y) : 0);
-					let div = document.createElement("div");
-					div.innerHTML = "<p style=\"font-family: 新細明體; text-align: center;\">" + y.toString() + " " + MONTHS[m] + "</p>";
-					div.innerHTML += PTR_MONTH_DAYS[d][s];
-					document.body.appendChild(div);
-					// changes made
-					curYear = y;
-					curMonth = m;
-				}
+				let s = seven(y, m);
+				let d = DAYS_IN_MONTH[m] - 28 + (m == 2 ? leap(y) : 0);
+				let div = document.createElement("div");
+				div.innerHTML = "<p style=\"font-family: 新細明體; text-align: center;\">" + y.toString() + " " + MONTHS[m] + "</p>";
+				div.innerHTML += PTRS_MONTH_DAYS[d][s];
+				document.body.appendChild(div);
+				// changes made
+				curYear = y;
+				curMonth = m;
 			}
-		</script>
-	</body>
-</html>
+		}
+	</script>
+</body></html>
