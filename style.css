@@ -88,6 +88,7 @@ a:hover {
 #myRefs {
 	column-count: 2;
 	width: 50%;
+	vertical-align: middle;
 	border: 1px solid aqua;
 	border-radius: 2px;
 }
@@ -100,7 +101,6 @@ a:hover {
 
 .option {
 	dislpay: block;
-	vertical-align: middle;
 	margin-left: 20px;
 }
 
