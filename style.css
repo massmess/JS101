@@ -53,6 +53,10 @@ body {
 	border-radius: 2px;
 }
 
+#func {
+	display: inline-block;
+}
+
 #twinkle {
 	text-align: center;
 	height: auto;
