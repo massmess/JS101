@@ -59,7 +59,9 @@ body {
 }
 
 #twinkle {
-	overflow-wrap: break-word;
+  overflow: auto; /* Adds scrollbars when necessary */
+  white-space: nowrap; /* Prevents wrapping */
+	/*overflow-wrap: break-word;*/
 	text-align: center;
 	height: auto;
 	font-family: Roboto;
