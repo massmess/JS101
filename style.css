@@ -59,7 +59,7 @@ body {
 	font-family: Roboto;
 	font-size: 1.25rem;
 	color: gold;
-	background-image: url("../images/bliss.jpg");
+	background-image: url("./images/bliss.jpg");
 	background-color: rgb(255, 255, 255, 0.3);  // overly transparent white overlay
 	background-blend-mode: overlay;  // blend the color and the image
 	background-size: cover;  // ensure the image covers the entire container
