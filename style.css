@@ -86,6 +86,9 @@ a:hover {
 	text-align: left;
 }
 
+.option {
+}
+
 .wrap-flex {
 	align-items: stretch;
 	display: flex;
