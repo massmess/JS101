@@ -80,6 +80,13 @@ a:hover {
 	border-radius: 2px;
 }
 
+#myRefs {
+	width: 50%;
+	border: 1px solid aqua;
+	border-radius: 2px;
+	vertical-align: middle;"
+}
+
 #myRefs > * {
 	font-family: sans-serif;
 	font-size: 1rem;
