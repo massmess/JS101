@@ -86,9 +86,9 @@ a:hover {
 }
 
 #myRefs {
-	column-count: 2;
 	width: 50%;
-	vertical-align: middle;
+	column-count: 2;
+	vertical-align: top;
 	border: 1px solid aqua;
 	border-radius: 2px;
 }
