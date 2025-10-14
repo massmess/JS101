@@ -95,8 +95,7 @@ a:hover {
 
 .option {
 	dislpay: inline-block;
-	/*vertical-align: middle;*/
-	margin-left: 30px;
+	margin-left: 20px;
 }
 
 .wrap-flex {
