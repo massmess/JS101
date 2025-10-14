@@ -55,7 +55,7 @@ body {
 
 #func {
 	display: inline-block;
-	vertical_align: bottom;
+	vertical-align: bottom;
 }
 
 #twinkle {
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .option {
-	dislpay: block;
+	dislpay: inline-block;
 	margin-left: 20px;
 }
 
