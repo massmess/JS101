@@ -90,7 +90,7 @@ a:hover {
 	dislpay: inline-block;
 	text-align: left;
 	vertical-align: middle;
-	margin-left: 20px;
+	/*margin-left: 20px;*/
 }
 
 .wrap-flex {
