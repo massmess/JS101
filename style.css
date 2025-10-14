@@ -59,6 +59,7 @@ body {
 }
 
 #twinkle {
+	overflow-wrap: break-word;
 	text-align: center;
 	height: auto;
 	font-family: Roboto;
