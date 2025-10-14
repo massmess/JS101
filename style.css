@@ -97,7 +97,9 @@ a:hover {
 }
 
 #myRefs > * {
-	overflow-wrap: break-word;
+  overflow: auto; /* Adds scrollbars when necessary */
+  white-space: nowrap; /* Prevents wrapping */
+	/*overflow-wrap: break-word;*/
 	font-family: sans-serif;
 	font-size: 1rem;
 	text-align: left;
