@@ -90,7 +90,6 @@ a:hover {
 	width: 50%;
 	border: 1px solid aqua;
 	border-radius: 2px;
-	vertical-align: middle;
 }
 
 #myRefs > * {
@@ -101,6 +100,7 @@ a:hover {
 
 .option {
 	dislpay: inline-block;
+	vertical-align: middle;
 	margin-left: 20px;
 }
 
