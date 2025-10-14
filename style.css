@@ -87,7 +87,7 @@ a:hover {
 }
 
 .option {
-	dislpay: flex;
+	dislpay: inline-block;
 	text-align: left;
 	vertical-align: middle;
 	margin-left: 20px;
