@@ -55,7 +55,7 @@ body {
 
 #func {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: top;
 }
 
 #twinkle {
@@ -86,8 +86,8 @@ a:hover {
 }
 
 #myRefs {
-	column-count: 3;
-	vertical-align: middle;
+	column-count: 4;
+	vertical-align: top;
 	border: 1px solid aqua;
 	border-radius: 2px;
 }
