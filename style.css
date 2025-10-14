@@ -99,7 +99,7 @@ a:hover {
 }
 
 .option {
-	dislpay: inline-block;
+	dislpay: block;
 	vertical-align: middle;
 	margin-left: 20px;
 }
