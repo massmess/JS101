@@ -55,6 +55,7 @@ body {
 
 #func {
 	display: inline-block;
+	vertical_align: bottom;
 }
 
 #twinkle {
