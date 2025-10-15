@@ -53,6 +53,14 @@ body {
 	border-radius: 2px;
 }
 
+#myCanvas {
+	display: inline-block;
+	background-color: pink;
+	border: 1px solid #d3d3d3;
+	border-radius: 3px;
+	margin: 14px;
+}
+
 #func {
 	display: inline-block;
 	vertical-align: top;
