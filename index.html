@@ -11,12 +11,17 @@
 </head>
 
 <body>
-	<img class="rounded-image" src="./images/高樓的風.jpg" id="lump" width="370" height="auto">
-	<div style="padding-left: 4px; border: 1px dashed red; border-radius: 2px; display: inline-block; width: 230px;">
+	<h3>A Table Demo for the Dummies</h3>
+
+	<img class="rounded-image"
+		src="./images/高樓的風.jpg" id="lump" width="370">
+	<div id="division">
 		What if anything has gone really wrong?<br>Who cares? It is an ill wind that blows nobody good.<br>
 		You should put forward a strong explanation to convince me of changing my mind though.<br>
 		Either a hero or a shithead you really are. Mark my words.<br>Everyone should reflect on what he has done for the day. 
 	</div>
+
+	<h3>A Table Demo for the Dummies</h3>
 
 	<p><div id="myInfo">
 		Explanation:
@@ -36,36 +41,45 @@
 		</ul>
 		Values of document.compatMode:
 		<ol>
-		<li>"CSS1Compat": Indicates that the document is in Standards Mode (or Almost Standards Mode). This happens when a proper <!DOCTYPE> declaration is present at the top of the HTML document.</li>
-		<li>"BackCompat": Indicates that the document is in Quirks Mode. This occurs when the <!DOCTYPE> declaration is missing or incorrect.</li>
+		<li>"CSS1Compat": Indicates that the document is in Standards Mode (or Almost Standards Mode). This happens when a proper &lt;!DOCTYPE&gt; declaration is present at the top of the HTML document.</li>
+		<li>"BackCompat": Indicates that the document is in Quirks Mode. This occurs when the &lt;!DOCTYPE&gt; declaration is missing or incorrect.</li>
 		</ol>
 	</div></p>
 
-	<img style="opacity: 0.5;" class="rounded-image" src="./images/高樓的風(small).jpg" id="lumpSmall" width="150" height="auto">
+	<h3>A Table Demo for the Dummies</h3>
+
+	<img style="opacity: 0.5;" class="rounded-image"
+		src="./images/高樓的風(small).jpg" id="lumpSmall" width="150">
 	<div class="S1">What if anything<br>Has gone wrong?</div>
-	<img style="opacity: 0.8;" class="rounded-image" src="./images/高樓的風(tiny).jpg" id="lumpTiny" width="120" height="auto">
-	<div class="S2">Who cares?<br>It's an<br>Ill wind<br>That blows<br>Nobody good.</div>
-	<div>
-		<canvas id="myCanvas" width="400" height="400">
-			Your browser does not support the HTML canvas tag.
-		</canvas>
-		<div style="display: inline-block; vertical-align: middle;"><input type="button" id="func" value="Click Me" onclick="drawCircles()"></div>
-	</div>
+	<img style="opacity: 0.8;" class="rounded-image"
+		src="./images/高樓的風(tiny).jpg" id="lumpTiny" width="120">
+	<div class="S2">Who cares?<br>It's an<br>Ill wind<br>That blows<br>
+		Nobody good.</div>
 
 	<h3>A Table Demo for the Dummies</h3>
-	<table style="width: 100%; border: 1px solid green;">
+
+	<canvas id="myCanvas" width="400" height="400">
+		Your browser does not support the HTML canvas tag.
+	</canvas>
+
+	<input type="button" id="func" value="Click Me" onclick="drawCircles()">
+	
+	<h3>A Table Demo for the Dummies</h3>
+
+	<table id="myRefs">
 		<thead>
 			<tr>
 				<th scope="row" colspan="4">AVAILABLE OPTIONS</th>
 			</tr>
 		</thead>
-		<tbody style="padding-left: 8px;">
+
+		<tbody>
 			<tr>
 				<td><a href="./workable/prime-factors.html">質因數</a></td>
 				<td><a href="./workable/big-big-factorial.html">階乘</a></td>
 				<td><a href="./workable/is-it-a-leap-year.html">閏年判別</a></td>
 				<td><a href="./workable/plural-s-vs-es.html">複數名詞</a></td>
-			</tr>
+				</tr>
 			<tr>
 				<td><a href="./index.html">Home</a></td>
 				<td><a href="./options/about.html">About</a></td>
@@ -75,8 +89,14 @@
 		</tbody>
 	</table>
 
+	<h3>A Collage Demo for the Dummies</h3>
+
 	<div class="wrap-flex">
-		<div id="twinkle">For the &ldquo;Coupe de Foudre&rdquo; text<br>To be formatted here:<br>After all, tomorrow<br>Is another day.<br>And it&rsquo;s everyone&rsquo;s<br>Belief.<br>(Be<br>There)</div>
+		<div id="twinkle">
+			For the &ldquo;Coupe de Foudre&rdquo; text<br>
+			To be formatted here:<br>After all, tomorrow<br>Is another day.<br>
+			And it&rsquo;s everyone&rsquo;s<br>Belief.<br>(Be<br>There)
+		</div>
 		<div id="two">Second Division</div>
 		<div>Third Division</div>
 		<div>Fourth Division</div>
@@ -103,7 +123,8 @@
 		// get the leap year ratio and show it
 		save = p.innerHTML;
 		const t = (s / 3000000).toFixed(4).toString();
-		p.innerHTML = save + `<br>Leap year ratio: <em>${s} / 3000000 &asymp; ${t}.<\em>`;
+		p.innerHTML = save +
+			`<br>Leap year ratio: <em>${s} / 3000000 &asymp; ${t}.<\em>`;
 
 		// twinkle, twinkle, little star...
 		twinkle();
@@ -111,12 +132,19 @@
 
 	<p>
 		<h3>What Fonts Are Used in This Web Page</h3>
-		<span style="font-family: Cambria, monospace;">What is &lsquo;Cambria&rsquo; font?</span>&nbsp;&check;<br>
-		<span style="font-family: Roboto, monospace;">What is &lsquo;Roboto&rsquo; font?</span>&nbsp;&check;<br>
-		<span style="font-family: monospace;">What is &lsquo;monospace&rsquo; font?</span>&nbsp;&check;<br>
-		<span style="font-family: fantasy;">What is &lsquo;fantasy&rsquo; font?</span>&nbsp;&#10007;<br>
-		<span style="font-family: cursive;">What is &lsquo;cursive&rsquo; font?</span>&nbsp;&#10007;<br>
-		<span style="font-family: serif;">What is &lsquo;serif&rsquo; font?</span>&nbsp;&#10007;<br>
-		<span style="font-family: sans-serif;">What is &lsquo;sans-serif&rsquo; font?</span>&nbsp;&check;<br>
+		<span style="font-family: Cambria, monospace;">
+			What is &lsquo;Cambria&rsquo; font?</span>&nbsp;&check;<br>
+		<span style="font-family: Roboto, monospace;">
+			What is &lsquo;Roboto&rsquo; font?</span>&nbsp;&check;<br>
+		<span style="font-family: monospace;">
+			What is &lsquo;monospace&rsquo; font?</span>&nbsp;&check;<br>
+		<span style="font-family: fantasy;">
+			What is &lsquo;fantasy&rsquo; font?</span>&nbsp;&#10007;<br>
+		<span style="font-family: cursive;">
+			What is &lsquo;cursive&rsquo; font?</span>&nbsp;&#10007;<br>
+		<span style="font-family: serif;">
+			What is &lsquo;serif&rsquo; font?</span>&nbsp;&#10007;<br>
+		<span style="font-family: sans-serif;">
+			What is &lsquo;sans-serif&rsquo; font?</span>&nbsp;&check;<br>
 	</p>
 </body></html>
