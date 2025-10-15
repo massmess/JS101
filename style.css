@@ -105,6 +105,10 @@ a:hover {
 	text-align: left;
 }
 
+td {
+	width: 25%;
+}
+
 .wrap-flex {
 	align-items: stretch;
 	display: flex;
