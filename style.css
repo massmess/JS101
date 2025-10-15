@@ -110,10 +110,11 @@ table {
 }
 
 table td {
+	width: 25%;
 	font-family: sans-serif;
 	font-size: 1rem;
 	text-align: left;
-	padding-left: 20px;
+	padding-left: 40px;
 }
 
 .wrap-flex {
