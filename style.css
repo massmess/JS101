@@ -72,7 +72,7 @@ body {
 	background-blend-mode: overlay;  // blend the color and the image
 	background-size: cover;  // ensure the image covers the entire container
 	background-position: center;  // center the image
-	padding: 3px;
+	padding: 13px;
 }
 
 a:hover {
