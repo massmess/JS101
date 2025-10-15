@@ -105,6 +105,10 @@ a:hover {
 	text-align: left;
 }
 
+table tr {
+	padding-right: 30px;
+}
+
 table td {
 	font-family: sans-serif;
 	font-size: 1rem;
