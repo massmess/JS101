@@ -106,7 +106,7 @@ a:hover {
 
 #myRefs {
 	width: 100%;
-	border: 1px solid green;
+	border-radius: 2px;
 	background-color: khaki;
 	padding: 10px;
 }
