@@ -113,6 +113,7 @@ table td {
 	font-family: sans-serif;
 	font-size: 1rem;
 	text-align: left;
+	padding: 4px;
 }
 
 .wrap-flex {
