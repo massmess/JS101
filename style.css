@@ -104,11 +104,11 @@ a:hover {
 	font-size: 1rem;
 	text-align: left;
 }
-
+/*
 td {
 	width: 25%;
 }
-
+*/
 .wrap-flex {
 	align-items: stretch;
 	display: flex;
