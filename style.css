@@ -104,11 +104,13 @@ a:hover {
 	font-size: 1rem;
 	text-align: left;
 }
-/*
-td {
-	width: 25%;
+
+table td {
+	font-family: sans-serif;
+	font-size: 1rem;
+	text-align: right;
 }
-*/
+
 .wrap-flex {
 	align-items: stretch;
 	display: flex;
