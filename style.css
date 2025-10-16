@@ -28,7 +28,6 @@ body {
 
 #divA {
 	display: inline-block;
-	text-align: center;
 	width: 230px;
 	padding: 2px;
 	border: 1px dashed red;
