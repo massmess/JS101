@@ -99,7 +99,7 @@ body {
 
 a:hover {
 	color: hsl(0, 100%, 40%);
-	background-color: hsl(187, 52%, 80%);  /* powderblue */
+	background-color: hsl(187, 52%, 80%); /* powderblue #b0e0e6 */
 	opacity: 0.95;
 }
 
@@ -114,7 +114,7 @@ a:hover {
 #myRefs {
 	width: 100%;
 	border-radius: 2px;
-	background-color: khaki;
+	background-color: hsl(54, 77%, 75%); /* khaki #c3b091 */
 	padding: 10px;
 }
 
