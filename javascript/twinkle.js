@@ -1,9 +1,9 @@
 function twinkle() {
 	let count = 0;
 	const d = document.getElementById("twinkle");
-	save = d.innerHTML;
+	save = d.innerText;  /* innerHTML;*/
 	saveColor = d.style.color;
-	tmp = save.slice(0, save.length - "<br>(Be<br>There)".length - 3);
+	tmp = save.slice(0, save.length - "<br>(Be<br>There)".length/* - 3 */);
 	tmp = tmp + "<br><em>I am good, very good indeed.</em><br>";
 
 	(() => {
