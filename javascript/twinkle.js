@@ -2,8 +2,11 @@ function twinkle() {
 	let count = 0;
 	const d = document.getElementById("twinkle");
 	save = d.innerHTML;
+	console.log(save, save.length);
 	saveColor = d.style.color;
-	tmp = save.slice(0, save.length - "<br>(Be<br>There)".length - 3);  // must be 3 really?
+	//tmp = save.slice(0, save.length - "<br>(Be<br>There)".length - 3);  // must be 3 really?
+	tmp = save.slice(0, save.length - 20);  // must be 3 really?
+	console.log(tmp, tmp.length);
 	tmp = tmp + "<br><em>I am good, very good indeed.</em><br>";
 
 	(() => {
