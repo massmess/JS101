@@ -134,8 +134,11 @@
 		p.innerHTML = save +
 			`<br>Leap year ratio: <em>${s} / 3000000 &asymp; ${t}.<\em>`;
 
-		// twinkle, twinkle, little star...
-		twinkle();
+/*		// twinkle, twinkle, little star...
+		twinkle();*/
+		window.addEventListener("load", () => {
+			twinkle();
+		});
 	</script>
 
 <!---H--->
