@@ -124,6 +124,9 @@ a:hover {
 	font-size: 1rem;
 	text-align: left;
 }
+tr {
+	line-height: 3;
+}
 
 .wrap-flex {
 	align-items: stretch;
