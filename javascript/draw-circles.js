@@ -1,11 +1,11 @@
 function drawCircles() {
 	document.getElementById("func").disabled = true;
-
+/*
 	const canvas = document.getElementById("myCanvas");
 	const ctx = canvas.getContext("2d");
 	const img = document.getElementById("lumpTiny");
 	const pattern = ctx.createPattern(img, "repeat");
-
+*/
 	const min = 20;
 	const max = 50;
 
